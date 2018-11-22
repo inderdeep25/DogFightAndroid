@@ -1,0 +1,42 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Volumes/DATA/Workspace/Android/DogFight/android/build/intermediates/res/merged/debug/values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "/Volumes/DATA/Workspace/Android/DogFight/android/res/values/styles.xml",
+                    "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "101",
+                        "endLines": "10",
+                        "endColumns": "12",
+                        "endOffsets": "559"
+                    }
+                },
+                {
+                    "source": "/Volumes/DATA/Workspace/Android/DogFight/android/res/values/strings.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "56",
+                        "endColumns": "45",
+                        "endOffsets": "97"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "45",
+                        "endOffsets": "96"
+                    }
+                }
+            ]
+        }
+    ]
+}
