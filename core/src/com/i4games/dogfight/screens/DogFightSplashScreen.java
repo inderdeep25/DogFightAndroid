@@ -4,14 +4,10 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.i4games.dogfight.base.BaseScreen;
 import com.i4games.dogfight.enumerations.Enumerations;
+import com.i4games.dogfight.managers.ScreenManager;
 import com.i4games.dogfight.util.Textures;
 
 public class DogFightSplashScreen extends BaseScreen {
-
-	private Texture logoImage;
-
-	private float imageY;
-	private float imageX;
 
 	private float screenTime = 5;
 	private float deltaTime = 0;
@@ -51,7 +47,7 @@ public class DogFightSplashScreen extends BaseScreen {
 		this.deltaTime += delta;
 
 		if(this.shouldMoveToNextScreen()){
-            this.game.fadeToScreenFrom(this, Enumerations.ScreenType.MENU_SCREEN,1.0f);
+			ScreenManager.getInstance().fadeInToScreen(Enumerations.Screen.MENU_SCREEN,0.5f);
 		}
 
 	}
@@ -62,9 +58,4 @@ public class DogFightSplashScreen extends BaseScreen {
 		return result;
 	}
 
-	@Override
-	public void dispose () {
-        super.dispose();
-        this.logoImage.dispose();
-    }
 }

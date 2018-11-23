@@ -5,11 +5,15 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.Event;
 import com.badlogic.gdx.scenes.scene2d.EventListener;
+import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
+import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.i4games.dogfight.base.BaseScreen;
+import com.i4games.dogfight.enumerations.Enumerations;
+import com.i4games.dogfight.managers.ScreenManager;
 import com.i4games.dogfight.util.Textures;
 
 public class MenuScreen extends BaseScreen {
@@ -37,27 +41,27 @@ public class MenuScreen extends BaseScreen {
     }
 
     private void setupListeners() {
-        this.onStartButtonClicked = new EventListener() {
+        this.onStartButtonClicked = new ClickListener() {
             @Override
-            public boolean handle(Event event) {
+            public void clicked(InputEvent event, float x, float y) {
                 Gdx.app.log("Click","On Start Clicked!");
-                return true;
+                ScreenManager.getInstance().fadeInToScreen(Enumerations.Screen.GAME_SCREEN,0.5f);
             }
         };
 
-        this.onCreditButtonClicked = new EventListener() {
+        this.onCreditButtonClicked = new ClickListener() {
             @Override
-            public boolean handle(Event event) {
+            public void clicked(InputEvent event, float x, float y) {
                 Gdx.app.log("Click","On Credit Clicked!");
-                return true;
+                ScreenManager.getInstance().fadeInToScreen(Enumerations.Screen.CREDIT_SCREEN,0.5f);
             }
         };
 
-        this.onExitButtonClicked = new EventListener() {
+        this.onExitButtonClicked = new ClickListener() {
             @Override
-            public boolean handle(Event event) {
+            public void clicked(InputEvent event, float x, float y) {
                 Gdx.app.log("Click","On Exit Clicked!");
-                return true;
+                Gdx.app.exit();
             }
         };
     }

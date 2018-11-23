@@ -1,6 +1,8 @@
 package com.i4games.dogfight.base;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input;
+import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
@@ -15,8 +17,9 @@ import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.i4games.dogfight.DogFight;
 import com.i4games.dogfight.util.ScreenSettings;
+import com.i4games.dogfight.util.Textures;
 
-public class BaseScreen implements Screen {
+public class BaseScreen implements Screen, InputProcessor {
 
     public Stage stage;
     protected Table table;
@@ -26,6 +29,8 @@ public class BaseScreen implements Screen {
 
     protected float screenHeight;
     protected float screenWidth;
+
+    public boolean isDisposed = false;
 
     public BaseScreen(){
         this.initializeVariables();
@@ -41,6 +46,8 @@ public class BaseScreen implements Screen {
         table = new Table();
         batch = new SpriteBatch();
         game = DogFight.getInstance();
+
+        this.backgroundImage = Textures.backgroundImageTexture;
 
         Gdx.input.setInputProcessor(stage);
 
@@ -88,14 +95,62 @@ public class BaseScreen implements Screen {
 
     @Override
     public void hide() {
-
     }
 
     @Override
     public void dispose() {
-        this.stage.dispose();
-        this.batch.dispose();
-        this.backgroundImage.dispose();
+        System.out.println("MyClass diposed");
+
+        if ( !this.isDisposed ){
+            this.stage.dispose();
+            this.batch.dispose();
+            this.isDisposed = true;
+        }
+
+    }
+
+
+    @Override
+    public boolean keyDown(int keycode) {
+        if(keycode == Input.Keys.BACK){
+            // Do your optional back button handling (show pause menu?)
+        }
+        return false;
+    }
+
+    @Override
+    public boolean keyUp(int keycode) {
+        return false;
+    }
+
+    @Override
+    public boolean keyTyped(char character) {
+        return false;
+    }
+
+    @Override
+    public boolean touchDown(int screenX, int screenY, int pointer, int button) {
+        return false;
+    }
+
+    @Override
+    public boolean touchUp(int screenX, int screenY, int pointer, int button) {
+        return false;
+    }
+
+    @Override
+    public boolean touchDragged(int screenX, int screenY, int pointer) {
+        return false;
+    }
+
+    @Override
+    public boolean mouseMoved(int screenX, int screenY) {
+        return false;
+    }
+
+    @Override
+    public boolean scrolled(int amount) {
+        return false;
     }
 
 
