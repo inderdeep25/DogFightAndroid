@@ -33,7 +33,7 @@ public class DogFight extends Game {
 
         ScreenSettings.getInstance().initializeScreenSettings();
         this.initializeScreens();
-        this.showScreen(Enumerations.ScreenType.SPLASH_SCREEN);
+        this.fadeInToScreen(Enumerations.ScreenType.SPLASH_SCREEN, 0.5f);
 
     }
 
@@ -46,23 +46,17 @@ public class DogFight extends Game {
 
     }
 
-    public void showScreen(Enumerations.ScreenType screenType){
-        BaseScreen screenToShow = (BaseScreen) screens.get(screenType.ordinal());
-        screenToShow.stage.getRoot().getColor().a = 0;
-        this.setScreen(screenToShow);
-    }
-
-    public void fadeToScreenFrom(BaseScreen currentScreen, final Enumerations.ScreenType nextScreenType, float duration) {
+    public void fadeToScreenFrom(BaseScreen currentScreen, final Enumerations.ScreenType nextScreenType, final float duration) {
 
         currentScreen.stage.getRoot().getColor().a = 1;
 
-        Action fadeAction = Actions.fadeOut(duration);
+        Action fadeAction = Actions.fadeOut(duration/2);
 
         RunnableAction nextScreenAction = new RunnableAction();
         nextScreenAction.setRunnable(new Runnable() {
             @Override
             public void run () {
-                showScreen(nextScreenType);
+                fadeInToScreen(nextScreenType,duration/2);
             }
         });
 
@@ -72,14 +66,19 @@ public class DogFight extends Game {
 
     }
 
-    public void fadeToScreen(Enumerations.ScreenType nextScreenType, float duration) {
+    public void fadeInToScreen(Enumerations.ScreenType nextScreenType, float duration) {
 
         BaseScreen screenToShow = (BaseScreen) screens.get(nextScreenType.ordinal());
         screenToShow.stage.getRoot().getColor().a = 0;
         screenToShow.stage.getRoot().addAction(Actions.fadeIn(duration));
         Gdx.app.log("INFO","Moving to next screen");
-        this.setScreen(screenToShow);
+        this.showScreen(nextScreenType);
 
+    }
+
+    public void showScreen(Enumerations.ScreenType screenType){
+        BaseScreen screenToShow = (BaseScreen) screens.get(screenType.ordinal());
+        this.setScreen(screenToShow);
     }
 
 

@@ -1,11 +1,9 @@
 package com.i4games.dogfight.screens;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.i4games.dogfight.base.BaseScreen;
 import com.i4games.dogfight.enumerations.Enumerations;
-import com.i4games.dogfight.util.ScreenSettings;
 import com.i4games.dogfight.util.Textures;
 
 public class DogFightSplashScreen extends BaseScreen {
@@ -23,11 +21,26 @@ public class DogFightSplashScreen extends BaseScreen {
 
 	    super.initializeVariables();
 
-        this.logoImage = Textures.logoImage;
-        this.backgroundImage = Textures.splashBackgroundImage;
+        this.backgroundImage = Textures.splashBackgroundImageTexture;
 
-        this.imageY = ScreenSettings.getInstance().height/2 - logoImage.getHeight()/2;
-        this.imageX = ScreenSettings.getInstance().width/2 - logoImage.getWidth()/2;
+        this.setupTable();
+	}
+
+	private void setupTable(){
+
+		this.table.setFillParent(true);
+		this.table.center();
+
+		this.table.setSize(screenWidth,screenHeight);
+		this.table.setBounds(0, 0, screenWidth, screenHeight);
+
+		Image image = new Image(Textures.logoImageTexture);
+
+		this.table.row();
+		this.table.add(image);
+
+
+		this.stage.addActor(this.table);
 
 	}
 
@@ -37,14 +50,8 @@ public class DogFightSplashScreen extends BaseScreen {
 	    super.render(delta);
 		this.deltaTime += delta;
 
-//        Gdx.gl.glClearColor(0, 0, 0, 1);
-//        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-
 		if(this.shouldMoveToNextScreen()){
-            this.game.fadeToScreen(Enumerations.ScreenType.MENU_SCREEN,5.0f);
-//            this.game.fadeToScreenFrom(this, Enumerations.ScreenType.MENU_SCREEN, 0.5f);
-		}else {
-			this.drawImagesOnScreen();
+            this.game.fadeToScreenFrom(this, Enumerations.ScreenType.MENU_SCREEN,1.0f);
 		}
 
 	}
@@ -53,14 +60,6 @@ public class DogFightSplashScreen extends BaseScreen {
 		boolean result;
 		result = this.deltaTime  >= this.screenTime;
 		return result;
-	}
-
-	private void drawImagesOnScreen() {
-
-        this.batch.begin();
-        this.batch.draw(backgroundImage,0,0);
-        this.batch.draw(logoImage, imageX, imageY);
-        this.batch.end();
 	}
 
 	@Override
