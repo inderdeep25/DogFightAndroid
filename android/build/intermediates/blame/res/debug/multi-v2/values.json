@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/jamie/Documents/2018Fall/GAME2014_AndroidGameDevelopment/03_finalProject/MS2_GDD/DogFightAndroid/android/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/Volumes/DATA/Workspace/Android/DogFightAndroid/android/res/values/styles.xml",
+                    "source": "/Users/jamie/Documents/2018Fall/GAME2014_AndroidGameDevelopment/03_finalProject/MS2_GDD/DogFightAndroid/android/res/values/strings.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "56",
+                        "endColumns": "45",
+                        "endOffsets": "97"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "45",
+                        "endOffsets": "96"
+                    }
+                },
+                {
+                    "source": "/Users/jamie/Documents/2018Fall/GAME2014_AndroidGameDevelopment/03_finalProject/MS2_GDD/DogFightAndroid/android/res/values/styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,23 +37,6 @@
                         "endLines": "10",
                         "endColumns": "12",
                         "endOffsets": "559"
-                    }
-                },
-                {
-                    "source": "/Volumes/DATA/Workspace/Android/DogFightAndroid/android/res/values/strings.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "56",
-                        "endColumns": "45",
-                        "endOffsets": "97"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "45",
-                        "endOffsets": "96"
                     }
                 }
             ]
