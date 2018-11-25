@@ -1,28 +1,30 @@
 #Internal package file, do not edit.
-#Sun Nov 25 13:37:41 EST 2018
-4.path=button_back.png
+#Sun Nov 25 17:02:51 EST 2018
+4.path=title_image.png
 8.set=ASSET
-6.path=button_startgame.png
+6.path=title_credit.png
 0.baseType=DIRECTORY
 5.baseType=DIRECTORY
 1.base=/Users/jamie/Documents/2018Fall/GAME2014_AndroidGameDevelopment/03_finalProject/MS2_GDD/DogFightAndroid/android/build/intermediates/merged_assets/debug/mergeDebugAssets/out
-8.path=button_credit.png
+8.path=background.png
 3.base=/Users/jamie/Documents/2018Fall/GAME2014_AndroidGameDevelopment/03_finalProject/MS2_GDD/DogFightAndroid/android/build/intermediates/merged_assets/debug/mergeDebugAssets/out
 4.set=ASSET
 5.base=/Users/jamie/Documents/2018Fall/GAME2014_AndroidGameDevelopment/03_finalProject/MS2_GDD/DogFightAndroid/android/build/intermediates/merged_assets/debug/mergeDebugAssets/out
 7.base=/Users/jamie/Documents/2018Fall/GAME2014_AndroidGameDevelopment/03_finalProject/MS2_GDD/DogFightAndroid/android/build/intermediates/merged_assets/debug/mergeDebugAssets/out
+9.base=/Users/jamie/Documents/2018Fall/GAME2014_AndroidGameDevelopment/03_finalProject/MS2_GDD/DogFightAndroid/android/build/intermediates/merged_assets/debug/mergeDebugAssets/out
 1.baseType=DIRECTORY
 0.set=ASSET
 6.baseType=DIRECTORY
 7.set=ASSET
 3.set=ASSET
 2.baseType=DIRECTORY
-1.path=background_with_overlay.png
+1.path=title_dogfight.png
 7.baseType=DIRECTORY
-3.path=title_image.png
-5.path=title_credit.png
+3.path=button_exitgame.png
+5.path=button_back.png
 0.base=/Users/jamie/Documents/2018Fall/GAME2014_AndroidGameDevelopment/03_finalProject/MS2_GDD/DogFightAndroid/android/build/intermediates/merged_assets/debug/mergeDebugAssets/out
-7.path=background.png
+7.path=button_startgame.png
+9.path=button_credit.png
 6.set=ASSET
 2.base=/Users/jamie/Documents/2018Fall/GAME2014_AndroidGameDevelopment/03_finalProject/MS2_GDD/DogFightAndroid/android/build/intermediates/merged_assets/debug/mergeDebugAssets/out
 4.base=/Users/jamie/Documents/2018Fall/GAME2014_AndroidGameDevelopment/03_finalProject/MS2_GDD/DogFightAndroid/android/build/intermediates/merged_assets/debug/mergeDebugAssets/out
@@ -31,9 +33,11 @@
 8.base=/Users/jamie/Documents/2018Fall/GAME2014_AndroidGameDevelopment/03_finalProject/MS2_GDD/DogFightAndroid/android/build/intermediates/merged_assets/debug/mergeDebugAssets/out
 2.set=ASSET
 8.baseType=DIRECTORY
-count=9
+9.set=ASSET
+count=10
 4.baseType=DIRECTORY
 5.set=ASSET
+9.baseType=DIRECTORY
 0.path=ifourgames.png
 1.set=ASSET
-2.path=button_exitgame.png
+2.path=background_with_overlay.png

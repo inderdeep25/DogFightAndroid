@@ -26,7 +26,7 @@ ADDED from /Users/jamie/Documents/2018Fall/GAME2014_AndroidGameDevelopment/03_fi
 	android:label
 		ADDED from /Users/jamie/Documents/2018Fall/GAME2014_AndroidGameDevelopment/03_finalProject/MS2_GDD/DogFightAndroid/android/AndroidManifest.xml:8:9-41
 	android:icon
-		ADDED from /Users/jamie/Documents/2018Fall/GAME2014_AndroidGameDevelopment/03_finalProject/MS2_GDD/DogFightAndroid/android/AndroidManifest.xml:7:9-45
+		ADDED from /Users/jamie/Documents/2018Fall/GAME2014_AndroidGameDevelopment/03_finalProject/MS2_GDD/DogFightAndroid/android/AndroidManifest.xml:7:9-38
 	android:allowBackup
 		ADDED from /Users/jamie/Documents/2018Fall/GAME2014_AndroidGameDevelopment/03_finalProject/MS2_GDD/DogFightAndroid/android/AndroidManifest.xml:6:9-35
 	android:theme

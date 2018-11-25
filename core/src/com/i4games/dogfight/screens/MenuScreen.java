@@ -78,6 +78,9 @@ public class MenuScreen extends BaseScreen {
         this.addButton(Textures.creditButtonImageTexture,this.onCreditButtonClicked, buttonWidth, buttonHeight);
         this.addButton(Textures.exitButtonImageTexture,this.onExitButtonClicked, buttonWidth, buttonHeight);
 
+        this.table.padTop(30);
+        this.table.padBottom(120);
+
         this.stage.addActor(this.table);
 
     }
@@ -85,7 +88,7 @@ public class MenuScreen extends BaseScreen {
     private void addTitleImage() {
         Image image = new Image(Textures.titleImageTexture);
         this.table.add(image)
-                .size(2*screenWidth/3,screenHeight/2).row();
+                .size(screenWidth,screenHeight/2).pad(100).row();
     }
 
 }
