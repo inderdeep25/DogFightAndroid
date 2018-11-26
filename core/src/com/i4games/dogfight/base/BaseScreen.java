@@ -16,6 +16,8 @@ import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.i4games.dogfight.DogFight;
+import com.i4games.dogfight.enumerations.Enumerations;
+import com.i4games.dogfight.managers.ScreenManager;
 import com.i4games.dogfight.util.ScreenSettings;
 import com.i4games.dogfight.util.Textures;
 
@@ -26,6 +28,7 @@ public class BaseScreen implements Screen, InputProcessor {
     protected SpriteBatch batch;
     protected Texture backgroundImage;
     protected DogFight game;
+    protected ScreenManager screenManager;
 
     protected float screenHeight;
     protected float screenWidth;
@@ -46,6 +49,7 @@ public class BaseScreen implements Screen, InputProcessor {
         table = new Table();
         batch = new SpriteBatch();
         game = DogFight.getInstance();
+        screenManager = ScreenManager.getInstance();
 
         this.backgroundImage = Textures.backgroundImageTexture;
 
@@ -112,8 +116,17 @@ public class BaseScreen implements Screen, InputProcessor {
 
     @Override
     public boolean keyDown(int keycode) {
+        Gdx.app.log("InKeyDown","InKeyDown");
         if(keycode == Input.Keys.BACK){
-            // Do your optional back button handling (show pause menu?)
+            Gdx.app.log("InBack","InBack");
+            Enumerations.Screen nextScreen;
+            if(screenManager.currentScreen != Enumerations.Screen.GAME_SCREEN){
+                nextScreen = screenManager.previousScreen;
+            }else{
+                nextScreen = Enumerations.Screen.PAUSE_SCREEN;
+            }
+            Gdx.app.log("InBack",nextScreen.name());
+            screenManager.fadeInToScreen(nextScreen,0.5f);
         }
         return false;
     }

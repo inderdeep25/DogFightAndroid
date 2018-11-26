@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 #Sun Nov 25 17:08:32 EST 2018
 base.0=/Users/jamie/Documents/2018Fall/GAME2014_AndroidGameDevelopment/03_finalProject/MS2_GDD/DogFightAndroid/android/build/intermediates/transforms/dexMerger/debug/9
+=======
+#Fri Nov 23 19:14:02 EST 2018
+base.0=/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/transforms/dexMerger/debug/9
+>>>>>>> pause_screen
 path.0=classes.dex
 renamed.0=classes.dex
