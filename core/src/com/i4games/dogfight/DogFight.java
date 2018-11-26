@@ -34,7 +34,7 @@ public class DogFight extends Game {
     public void create() {
         Gdx.input.setCatchBackKey(true);
         ScreenSettings.getInstance().initializeScreenSettings();
-        ScreenManager.getInstance().fadeInToScreen(Enumerations.Screen.GAME_SCREEN,0.5f);
+        ScreenManager.getInstance().fadeInToScreen(Enumerations.Screen.SPLASH_SCREEN,0.5f);
     }
 
     @Override
