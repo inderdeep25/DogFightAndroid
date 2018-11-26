@@ -12,6 +12,7 @@ import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.i4games.dogfight.base.BaseScreen;
+import com.i4games.dogfight.enumerations.Enumerations;
 import com.i4games.dogfight.managers.ScreenManager;
 import com.i4games.dogfight.util.Textures;
 
@@ -37,7 +38,7 @@ public class PauseScreen extends BaseScreen {
     @Override
     public void initializeVariables(){
         super.initializeVariables();
-        this.backgroundImage = Textures.pausebackgroundImageTexture;
+        this.backgroundImage = Textures.pauseBackgroundImageTexture;
         this.buttonWidth = this.screenWidth - 40;
         this.buttonHeight = this.screenHeight/5;
 
@@ -71,7 +72,7 @@ public class PauseScreen extends BaseScreen {
             @Override
             public void touchUp (InputEvent event, float x, float y, int pointer, int button) {
                 Gdx.app.log("Click","On Exit Clicked!");
-//                Gdx.app.exit();
+                ScreenManager.getInstance().fadeInToScreen(Enumerations.Screen.MENU_SCREEN,0.5f);
             }
         };
     }

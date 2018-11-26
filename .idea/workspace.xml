@@ -5,250 +5,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="820b2c60-152f-412f-9362-da6a39d4919f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/android/assets/pause_background.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/core/src/com/i4games/dogfight/util/FontGenerator.java" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileContent/annotation-processors.bin" afterPath="$PROJECT_DIR$/.gradle/4.6/fileContent/annotation-processors.bin" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/4.6/fileContent/fileContent.lock" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android/assets/button_pause.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android/assets/hud_emptyheart.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android/assets/hud_fullheart.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/android/assets/hud_fullheart_c.png" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/resourceHashesCache.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/jarAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/jarAnalysis.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/javaCompile.lock" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskJars.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/core_core_1_0.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/android/android.iml" afterPath="$PROJECT_DIR$/android/android.iml" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/blame/res/debug/multi-v2/debug.json" afterPath="$PROJECT_DIR$/android/build/intermediates/blame/res/debug/multi-v2/debug.json" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/blame/res/debug/multi-v2/values.json" afterPath="$PROJECT_DIR$/android/build/intermediates/blame/res/debug/multi-v2/values.json" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/blame/res/debug/single/debug.json" afterPath="$PROJECT_DIR$/android/build/intermediates/blame/res/debug/single/debug.json" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/build-info/debug/build-info.xml" afterPath="$PROJECT_DIR$/android/build/intermediates/build-info/debug/build-info.xml" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/1543171321335/classes.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/1543171507135/classes.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/1543171874384/classes.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/1543173275927/classes.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/1543173909613/classes.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/1543174494022/classes.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/builds/debug/1543183517665/classes.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/base/BaseScreen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/base/BaseScreen.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/enumerations/Enumerations$Screen$1.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/enumerations/Enumerations$Screen$1.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/enumerations/Enumerations$Screen$2.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/enumerations/Enumerations$Screen$2.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/enumerations/Enumerations$Screen$3.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/enumerations/Enumerations$Screen$3.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/enumerations/Enumerations$Screen$4.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/enumerations/Enumerations$Screen$4.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/enumerations/Enumerations$Screen$5.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/enumerations/Enumerations$Screen$5.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/enumerations/Enumerations$Screen$6.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/enumerations/Enumerations$Screen$6.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/enumerations/Enumerations$Screen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/enumerations/Enumerations$Screen.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/managers/ScreenManager.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/managers/ScreenManager.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/screens/CreditScreen$2.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/screens/CreditScreen$2.class" />
+      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/DogFight.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/DogFight.class" />
+      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/screens/GameScreen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/screens/GameScreen.class" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/screens/MenuScreen$1.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/screens/MenuScreen$1.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/screens/MenuScreen$2.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/screens/MenuScreen$2.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/screens/MenuScreen$3.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/screens/MenuScreen$3.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/screens/MenuScreen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/screens/MenuScreen.class" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/screens/PauseScreen$1.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/screens/PauseScreen$1.class" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/screens/PauseScreen$2.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/screens/PauseScreen$2.class" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/screens/PauseScreen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/screens/PauseScreen.class" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/util/ImageNames.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/util/ImageNames.class" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/util/Textures.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/i4games/dogfight/util/Textures.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/debug-mergeJavaRes/merge-state" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/JWlS+Pwv83EeTFVU_qZvmru0YiI=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ZurwgtcFzIigEBP4jKCqMQC6PCU=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/fNx9oSjbgi7UIt2YIrDK2upyTA8=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/rAQcDlvnxwxpB7+rvZWhQbuZWps=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/debug-mergeJniLibs/merge-state" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/JWlS+Pwv83EeTFVU_qZvmru0YiI=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/ZurwgtcFzIigEBP4jKCqMQC6PCU=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/fNx9oSjbgi7UIt2YIrDK2upyTA8=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/rAQcDlvnxwxpB7+rvZWhQbuZWps=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/ir_dep/debug/package_dependencies/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/ir_dep/debug/package_dependencies/dex-renamer-state.txt" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/ir_slices/debug/package_slice_0/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/ir_slices/debug/package_slice_0/dex-renamer-state.txt" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/ir_slices/debug/package_slice_1/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/ir_slices/debug/package_slice_1/dex-renamer-state.txt" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/ir_slices/debug/package_slice_2/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/ir_slices/debug/package_slice_2/dex-renamer-state.txt" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/ir_slices/debug/package_slice_3/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/ir_slices/debug/package_slice_3/dex-renamer-state.txt" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/ir_slices/debug/package_slice_4/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/ir_slices/debug/package_slice_4/dex-renamer-state.txt" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/ir_slices/debug/package_slice_5/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/ir_slices/debug/package_slice_5/dex-renamer-state.txt" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/ir_slices/debug/package_slice_6/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/ir_slices/debug/package_slice_6/dex-renamer-state.txt" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/ir_slices/debug/package_slice_7/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/ir_slices/debug/package_slice_7/dex-renamer-state.txt" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/ir_slices/debug/package_slice_8/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/ir_slices/debug/package_slice_8/dex-renamer-state.txt" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/ir_slices/debug/package_slice_9/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/ir_slices/debug/package_slice_9/dex-renamer-state.txt" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeDebugResources/merger.xml" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeDebugShaders/merger.xml" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/9fxQPIg4Cc9+TUkynWK5VimOy8Y=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/D3JVD6MnnEsNK+IoB6WZgRA2oJY=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/packageInstantRunResourcesDebug/tmp/debug/dex-renamer-state.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/packageInstantRunResourcesDebug/tmp/debug/file-input-save-data.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/packageInstantRunResourcesDebug/tmp/debug/zip-cache/75aAoV3zdNDFHHlV6_mzV_TjnFg=" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/processInstantRunDebugResourcesApk/package_resources-debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/processInstantRunDebugResourcesApk/package_resources-debug/dex-renamer-state.txt" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/instant-run-apk/debug/android-debug.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/instant-run-apk/debug/android-debug.apk" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/instant-run-resources/output.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/instant-run-resources/resources-debug.ir.ap_" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterPath="$PROJECT_DIR$/android/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher.png.flat" afterPath="$PROJECT_DIR$/android/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher.png.flat" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/res/merged/debug/drawable-hdpi_icon.png.flat" afterPath="$PROJECT_DIR$/android/build/intermediates/res/merged/debug/drawable-hdpi_icon.png.flat" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/res/merged/debug/drawable-mdpi_ic_launcher.png.flat" afterPath="$PROJECT_DIR$/android/build/intermediates/res/merged/debug/drawable-mdpi_ic_launcher.png.flat" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/res/merged/debug/drawable-mdpi_icon.png.flat" afterPath="$PROJECT_DIR$/android/build/intermediates/res/merged/debug/drawable-mdpi_icon.png.flat" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher.png.flat" afterPath="$PROJECT_DIR$/android/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher.png.flat" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/res/merged/debug/drawable-xhdpi_icon.png.flat" afterPath="$PROJECT_DIR$/android/build/intermediates/res/merged/debug/drawable-xhdpi_icon.png.flat" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher.png.flat" afterPath="$PROJECT_DIR$/android/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher.png.flat" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/res/merged/debug/drawable-xxhdpi_icon.png.flat" afterPath="$PROJECT_DIR$/android/build/intermediates/res/merged/debug/drawable-xxhdpi_icon.png.flat" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_launcher.png.flat" afterPath="$PROJECT_DIR$/android/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_launcher.png.flat" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/res/merged/debug/drawable-xxxhdpi_icon.png.flat" afterPath="$PROJECT_DIR$/android/build/intermediates/res/merged/debug/drawable-xxxhdpi_icon.png.flat" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/res/merged/debug/values_values.arsc.flat" afterPath="$PROJECT_DIR$/android/build/intermediates/res/merged/debug/values_values.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/resources/instant-run/debug/resources-debug.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/resources/instant-run/debug/resources-debug.apk" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/dep/dependencies.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/dep/dependencies.apk" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_0.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_0.apk" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_1.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_1.apk" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_2.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_2.apk" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_3.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_3.apk" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_4.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_4.apk" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_5.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_5.apk" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_6.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_6.apk" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_7.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_7.apk" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_8.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_8.apk" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_9.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_9.apk" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/0.jar" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/0.jar" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/1.jar" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/1.jar" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/12/com/i4games/dogfight/util/ImageNames.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/12/com/i4games/dogfight/util/ScreenSettings.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/12/com/i4games/dogfight/util/Textures.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/13.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/14.jar" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/14.jar" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/15.jar" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/15.jar" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/16.jar" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/16.jar" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/17.jar" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/17.jar" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/18.jar" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/18.jar" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/19.jar" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/19.jar" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/2.jar" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/2.jar" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/20.jar" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/20.jar" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/21.jar" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/21.jar" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/22.jar" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/22.jar" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/24.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/25.jar" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/25.jar" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/26.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/29.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/3/com/i4games/dogfight/screens/CreditScreen$1.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/3/com/i4games/dogfight/screens/CreditScreen$2.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/3/com/i4games/dogfight/screens/CreditScreen.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/3/com/i4games/dogfight/screens/DogFightSplashScreen.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/3/com/i4games/dogfight/screens/GameScreen.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/3/com/i4games/dogfight/screens/MenuScreen$1.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/3/com/i4games/dogfight/screens/MenuScreen$2.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/3/com/i4games/dogfight/screens/MenuScreen$3.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/3/com/i4games/dogfight/screens/MenuScreen.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/3/com/i4games/dogfight/screens/PauseScreen.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/3/com/i4games/dogfight/screens/ResultScreen.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/30.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/31.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/32.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/33.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/34.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/4/com/i4games/dogfight/managers/ScreenManager.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/6/com/i4games/dogfight/screens/PauseScreen$1.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/6/com/i4games/dogfight/screens/PauseScreen$2.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/7/com/i4games/dogfight/AndroidLauncher.dex" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/7/com/i4games/dogfight/AndroidLauncher.dex" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/7/com/i4games/dogfight/base/BaseScreen.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/8/com/i4games/dogfight/enumerations/Enumerations$1.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/8/com/i4games/dogfight/enumerations/Enumerations$Screen$1.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/8/com/i4games/dogfight/enumerations/Enumerations$Screen$2.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/8/com/i4games/dogfight/enumerations/Enumerations$Screen$3.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/8/com/i4games/dogfight/enumerations/Enumerations$Screen$4.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/8/com/i4games/dogfight/enumerations/Enumerations$Screen$5.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/8/com/i4games/dogfight/enumerations/Enumerations$Screen$6.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/8/com/i4games/dogfight/enumerations/Enumerations$Screen.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/8/com/i4games/dogfight/enumerations/Enumerations.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/__content__.json" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/__content__.json" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexMerger/debug/0/classes.dex" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dexMerger/debug/0/classes.dex" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexMerger/debug/1/classes.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexMerger/debug/21/classes.dex" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dexMerger/debug/21/classes.dex" />
+      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/7/com/i4games/dogfight/DogFight.dex" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dexBuilder/debug/7/com/i4games/dogfight/DogFight.dex" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexMerger/debug/4/classes.dex" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dexMerger/debug/4/classes.dex" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexMerger/debug/5/classes.dex" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexMerger/debug/9/classes.dex" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dexMerger/debug/9/classes.dex" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dexMerger/debug/__content__.json" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dexMerger/debug/__content__.json" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/base/BaseScreen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/base/BaseScreen.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$1.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$1.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$2.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$2.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$3.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$3.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$4.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$4.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$5.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$5.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$6.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$6.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/managers/ScreenManager.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/managers/ScreenManager.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/screens/CreditScreen$2.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/screens/CreditScreen$2.class" />
+      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/DogFight.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/DogFight.class" />
+      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/screens/GameScreen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/screens/GameScreen.class" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/screens/MenuScreen$1.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/screens/MenuScreen$1.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/screens/MenuScreen$2.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/screens/MenuScreen$2.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/screens/MenuScreen$3.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/screens/MenuScreen$3.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/screens/MenuScreen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/screens/MenuScreen.class" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/screens/PauseScreen$1.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/screens/PauseScreen$1.class" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/screens/PauseScreen$2.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/screens/PauseScreen$2.class" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/screens/PauseScreen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/screens/PauseScreen.class" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/util/ImageNames.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/util/ImageNames.class" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/util/Textures.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/0/com/i4games/dogfight/util/Textures.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/AndroidLauncher.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/AndroidLauncher.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/base/BaseScreen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/base/BaseScreen.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$1.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$1.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$2.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$2.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$3.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$3.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$4.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$4.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$5.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$5.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$6.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen$6.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/enumerations/Enumerations$Screen.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/managers/ScreenManager.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/managers/ScreenManager.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/screens/CreditScreen$2.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/screens/CreditScreen$2.class" />
+      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/DogFight.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/DogFight.class" />
+      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/screens/GameScreen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/screens/GameScreen.class" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/screens/MenuScreen$1.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/screens/MenuScreen$1.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/screens/MenuScreen$2.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/screens/MenuScreen$2.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/screens/MenuScreen$3.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/screens/MenuScreen$3.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/screens/MenuScreen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/screens/MenuScreen.class" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/screens/PauseScreen$1.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/screens/PauseScreen$1.class" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/screens/PauseScreen$2.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/screens/PauseScreen$2.class" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/screens/PauseScreen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/screens/PauseScreen.class" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/util/ImageNames.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/util/ImageNames.class" />
       <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/util/Textures.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/0/com/i4games/dogfight/util/Textures.class" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/__content__.json" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/__content__.json" />
-      <change beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/mergeJavaRes/debug/0.jar" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/mergeJavaRes/debug/0.jar" />
-      <change beforePath="$PROJECT_DIR$/android/build/outputs/apk/debug/android-debug.apk" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/outputs/apk/debug/output.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/android/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/android/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/base/BaseScreen.class" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/base/BaseScreen.class" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/enumerations/Enumerations$Screen$1.class" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/enumerations/Enumerations$Screen$1.class" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/enumerations/Enumerations$Screen$2.class" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/enumerations/Enumerations$Screen$2.class" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/enumerations/Enumerations$Screen$3.class" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/enumerations/Enumerations$Screen$3.class" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/enumerations/Enumerations$Screen$4.class" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/enumerations/Enumerations$Screen$4.class" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/enumerations/Enumerations$Screen$5.class" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/enumerations/Enumerations$Screen$5.class" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/enumerations/Enumerations$Screen$6.class" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/enumerations/Enumerations$Screen$6.class" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/enumerations/Enumerations$Screen.class" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/enumerations/Enumerations$Screen.class" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/managers/ScreenManager.class" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/managers/ScreenManager.class" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/screens/CreditScreen$2.class" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/screens/CreditScreen$2.class" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/DogFight.class" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/DogFight.class" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/screens/GameScreen.class" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/screens/GameScreen.class" />
       <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/screens/MenuScreen$1.class" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/screens/MenuScreen$1.class" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/screens/MenuScreen$2.class" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/screens/MenuScreen$2.class" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/screens/MenuScreen$3.class" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/screens/MenuScreen$3.class" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/screens/MenuScreen.class" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/screens/MenuScreen.class" />
       <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/screens/PauseScreen$1.class" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/screens/PauseScreen$1.class" />
       <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/screens/PauseScreen$2.class" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/screens/PauseScreen$2.class" />
       <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/screens/PauseScreen.class" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/screens/PauseScreen.class" />
       <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/util/ImageNames.class" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/util/ImageNames.class" />
       <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/util/Textures.class" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/i4games/dogfight/util/Textures.class" />
       <change beforePath="$PROJECT_DIR$/core/build/libs/core-1.0.jar" afterPath="$PROJECT_DIR$/core/build/libs/core-1.0.jar" />
-      <change beforePath="$PROJECT_DIR$/core/core.iml" afterPath="$PROJECT_DIR$/core/core.iml" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/i4games/dogfight/base/BaseScreen.java" afterPath="$PROJECT_DIR$/core/src/com/i4games/dogfight/base/BaseScreen.java" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/i4games/dogfight/enumerations/Enumerations.java" afterPath="$PROJECT_DIR$/core/src/com/i4games/dogfight/enumerations/Enumerations.java" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/i4games/dogfight/managers/ScreenManager.java" afterPath="$PROJECT_DIR$/core/src/com/i4games/dogfight/managers/ScreenManager.java" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/i4games/dogfight/screens/CreditScreen.java" afterPath="$PROJECT_DIR$/core/src/com/i4games/dogfight/screens/CreditScreen.java" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/i4games/dogfight/screens/MenuScreen.java" afterPath="$PROJECT_DIR$/core/src/com/i4games/dogfight/screens/MenuScreen.java" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/i4games/dogfight/DogFight.java" afterPath="$PROJECT_DIR$/core/src/com/i4games/dogfight/DogFight.java" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/i4games/dogfight/screens/GameScreen.java" afterPath="$PROJECT_DIR$/core/src/com/i4games/dogfight/screens/GameScreen.java" />
       <change beforePath="$PROJECT_DIR$/core/src/com/i4games/dogfight/screens/PauseScreen.java" afterPath="$PROJECT_DIR$/core/src/com/i4games/dogfight/screens/PauseScreen.java" />
       <change beforePath="$PROJECT_DIR$/core/src/com/i4games/dogfight/util/ImageNames.java" afterPath="$PROJECT_DIR$/core/src/com/i4games/dogfight/util/ImageNames.java" />
       <change beforePath="$PROJECT_DIR$/core/src/com/i4games/dogfight/util/Textures.java" afterPath="$PROJECT_DIR$/core/src/com/i4games/dogfight/util/Textures.java" />
-      <change beforePath="$PROJECT_DIR$/ios/ios.iml" afterPath="$PROJECT_DIR$/ios/ios.iml" />
-      <change beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -267,33 +87,21 @@
       <file leaf-file-name="DogFight.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/com/i4games/dogfight/DogFight.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="41" column="41" lean-forward="false" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+            <state relative-caret-position="210">
+              <caret line="36" column="82" lean-forward="false" selection-start-line="36" selection-start-column="82" selection-end-line="36" selection-end-column="82" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseScreen.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/com/i4games/dogfight/base/BaseScreen.java">
+      <file leaf-file-name="GameScreen.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/src/com/i4games/dogfight/screens/GameScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="121" column="35" lean-forward="false" selection-start-line="121" selection-start-column="35" selection-end-line="121" selection-end-column="35" />
+            <state relative-caret-position="268">
+              <caret line="79" column="17" lean-forward="false" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1442#1443#0" expanded="true" />
-                <element signature="e#1477#1478#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScreenManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/com/i4games/dogfight/managers/ScreenManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="37" column="43" lean-forward="false" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -301,54 +109,8 @@
       <file leaf-file-name="PauseScreen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/src/com/i4games/dogfight/screens/PauseScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="74" column="13" lean-forward="false" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
-              <folding>
-                <element signature="e#2246#2500#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FontGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/com/i4games/dogfight/util/FontGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1156#1157#0" expanded="true" />
-                <element signature="e#1191#1192#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScreenSettings.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/com/i4games/dogfight/util/ScreenSettings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="5" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="15" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuScreen.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/src/com/i4games/dogfight/screens/MenuScreen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="42" column="90" lean-forward="false" selection-start-line="42" selection-start-column="90" selection-end-line="42" selection-end-column="90" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageNames.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/com/i4games/dogfight/util/ImageNames.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="51" />
+            <state relative-caret-position="345">
+              <caret line="74" column="97" lean-forward="false" selection-start-line="74" selection-start-column="97" selection-end-line="74" selection-end-column="97" />
               <folding />
             </state>
           </provider>
@@ -358,7 +120,7 @@
         <entry file="file://$PROJECT_DIR$/core/src/com/i4games/dogfight/util/Textures.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -3804,14 +3566,15 @@
       <list>
         <option value="$PROJECT_DIR$/core/src/com/i4games/dogfight/screens/CreditScreen.java" />
         <option value="$PROJECT_DIR$/core/src/com/i4games/dogfight/enumerations/Enumerations.java" />
-        <option value="$PROJECT_DIR$/core/src/com/i4games/dogfight/util/ImageNames.java" />
-        <option value="$PROJECT_DIR$/core/src/com/i4games/dogfight/util/Textures.java" />
         <option value="$PROJECT_DIR$/core/src/com/i4games/dogfight/util/FontGenerator.java" />
-        <option value="$PROJECT_DIR$/core/src/com/i4games/dogfight/DogFight.java" />
         <option value="$PROJECT_DIR$/core/src/com/i4games/dogfight/base/BaseScreen.java" />
         <option value="$PROJECT_DIR$/core/src/com/i4games/dogfight/managers/ScreenManager.java" />
-        <option value="$PROJECT_DIR$/core/src/com/i4games/dogfight/screens/PauseScreen.java" />
         <option value="$PROJECT_DIR$/core/src/com/i4games/dogfight/screens/MenuScreen.java" />
+        <option value="$PROJECT_DIR$/core/src/com/i4games/dogfight/DogFight.java" />
+        <option value="$PROJECT_DIR$/core/src/com/i4games/dogfight/util/Textures.java" />
+        <option value="$PROJECT_DIR$/core/src/com/i4games/dogfight/util/ImageNames.java" />
+        <option value="$PROJECT_DIR$/core/src/com/i4games/dogfight/screens/GameScreen.java" />
+        <option value="$PROJECT_DIR$/core/src/com/i4games/dogfight/screens/PauseScreen.java" />
       </list>
     </option>
   </component>
@@ -4088,11 +3851,11 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36038515" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3645117" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33700138" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -4108,6 +3871,37 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33700138" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36038515" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -4162,22 +3956,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/i4games/dogfight/util/Textures.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/i4games/dogfight/util/ImageNames.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.8/bac17f395be5010619b31280fe84e9f53118d0b9/gdx-1.9.8-sources.jar!/com/badlogic/gdx/utils/Array.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
@@ -4199,18 +3977,10 @@
         <state relative-caret-position="175">
           <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1156#1157#0" expanded="true" />
-            <element signature="e#1191#1192#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1156#1157#0" expanded="false" />
+            <element signature="e#1191#1192#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/i4games/dogfight/DogFight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="41" column="41" lean-forward="false" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4219,9 +3989,9 @@
         <state relative-caret-position="317">
           <caret line="121" column="35" lean-forward="false" selection-start-line="121" selection-start-column="35" selection-end-line="121" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1442#1443#0" expanded="true" />
-            <element signature="e#1477#1478#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1442#1443#0" expanded="false" />
+            <element signature="e#1477#1478#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4234,21 +4004,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/i4games/dogfight/screens/PauseScreen.java">
+    <entry file="file://$PROJECT_DIR$/core/src/com/i4games/dogfight/screens/MenuScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="74" column="13" lean-forward="false" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
-          <folding>
-            <element signature="e#2246#2500#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="211">
+          <caret line="60" column="10" lean-forward="true" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/com/i4games/dogfight/screens/MenuScreen.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.8/bac17f395be5010619b31280fe84e9f53118d0b9/gdx-1.9.8-sources.jar!/com/badlogic/gdx/scenes/scene2d/ui/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="42" column="90" lean-forward="false" selection-start-line="42" selection-start-column="90" selection-end-line="42" selection-end-column="90" />
+        <state relative-caret-position="226">
+          <caret line="602" column="22" lean-forward="true" selection-start-line="602" selection-start-column="22" selection-end-line="602" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/assets/hud_fullheart.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/assets/hud_emptyheart.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/i4games/dogfight/util/ImageNames.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="64" lean-forward="false" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/i4games/dogfight/util/Textures.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/i4games/dogfight/DogFight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="36" column="82" lean-forward="false" selection-start-line="36" selection-start-column="82" selection-end-line="36" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/i4games/dogfight/screens/PauseScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="74" column="97" lean-forward="false" selection-start-line="74" selection-start-column="97" selection-end-line="74" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/i4games/dogfight/screens/GameScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="79" column="17" lean-forward="false" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
