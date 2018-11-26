@@ -27,7 +27,6 @@ public class CreditScreen extends BaseScreen {
     @Override
     public void initializeVariables(){
         super.initializeVariables();
-
         this.buttonWidth = this.screenWidth - 40;
         this.buttonHeight = this.screenHeight/5;
         this.setupListeners();
