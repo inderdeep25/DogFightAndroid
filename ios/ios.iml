@@ -31,6 +31,7 @@
     <orderEntry type="library" exported="" name="gdx-backend-robovm-1.9.8" level="project" />
     <orderEntry type="library" exported="" name="robovm-rt-2.3.5" level="project" />
     <orderEntry type="library" exported="" name="robovm-cocoatouch-2.3.5" level="project" />
+    <orderEntry type="library" exported="" name="gdx-freetype-1.9.8" level="project" />
     <orderEntry type="library" exported="" name="gdx-platform-1.9.8-natives-ios" level="project" />
     <orderEntry type="library" exported="" name="gdx-box2d-platform-1.9.8-natives-ios" level="project" />
     <orderEntry type="library" exported="" name="gdx-box2d-1.9.8" level="project" />

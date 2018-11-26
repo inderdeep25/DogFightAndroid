@@ -17,6 +17,9 @@ public class ScreenManager {
     // Reference to game
     private DogFight game;
 
+    public Enumerations.Screen currentScreen;
+    public Enumerations.Screen previousScreen;
+
     // Singleton: private constructor
     private ScreenManager() {
         super();
@@ -34,19 +37,23 @@ public class ScreenManager {
     public void showCurrentScreen(){
         // Get current screen to dispose it
         BaseScreen currentScreen = (BaseScreen) game.getScreen();
-        game.setScreen(currentScreen);
+        this.game.setScreen(currentScreen);
     }
 
     public void fadeInToScreen(Enumerations.Screen screenEnum, final float duration, Object... params) {
 
-        // Show new screen
-        final BaseScreen nextScreen = screenEnum.getScreen(params);
+        if (this.currentScreen != screenEnum){
+            this.previousScreen = this.currentScreen == null ? screenEnum : this.currentScreen;
+            this.currentScreen = screenEnum;
 
-        nextScreen.stage.getRoot().getColor().a = 0;
-        nextScreen.stage.getRoot().addAction(Actions.fadeIn(duration));
-        Gdx.app.log("INFO","Moving to next screen");
+            // Show new screen
+            BaseScreen nextScreen = screenEnum.getScreen(params);
+            nextScreen.stage.getRoot().getColor().a = 0;
+            nextScreen.stage.getRoot().addAction(Actions.fadeIn(duration));
+            Gdx.app.log("INFO","Moving to next screen");
 
-        game.setScreen(nextScreen);
+            this.game.setScreen(nextScreen);
+        }
 
     }
 }
