@@ -2,15 +2,16 @@ package com.i4games.dogfight.screens;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.EventListener;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
-import com.badlogic.gdx.scenes.scene2d.ui.Image;
+import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
+import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
+import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.i4games.dogfight.base.BaseScreen;
-import com.i4games.dogfight.enumerations.Enumerations;
 import com.i4games.dogfight.managers.ScreenManager;
 import com.i4games.dogfight.util.Textures;
 
@@ -19,6 +20,11 @@ public class PauseScreen extends BaseScreen {
 
     private float buttonWidth;
     private float buttonHeight;
+
+    private Label.LabelStyle labelStyle;
+
+    private float titleLabelScale;
+    private float infoLabelScale;
 
     private EventListener onBackButtonClicked;
     private EventListener onExitButtonClicked;
@@ -31,9 +37,13 @@ public class PauseScreen extends BaseScreen {
     @Override
     public void initializeVariables(){
         super.initializeVariables();
-        this.backgroundImage = Textures.backgroundImageTexture;
+        this.backgroundImage = Textures.pausebackgroundImageTexture;
         this.buttonWidth = this.screenWidth - 40;
         this.buttonHeight = this.screenHeight/5;
+
+        this.titleLabelScale = 1.2f;
+        this.infoLabelScale = 0.6f;
+
         this.setupListeners();
         this.setupLabelStyles();
         this.setupTable();
@@ -41,28 +51,9 @@ public class PauseScreen extends BaseScreen {
 
     private void setupLabelStyles() {
 
-        int Help_Guides = 12;
-        int row_height = Gdx.graphics.getWidth() / 12;
-        int col_width = Gdx.graphics.getWidth() / 12;
+        this.labelStyle = new Label.LabelStyle();
+        this.labelStyle.font = this.fontGenerator.getAnabelleFont();
 
-        FreeTypeFontGenerator generator = new FreeTypeFontGenerator(Gdx.files.internal("truetypefont/anabelle_script_light.otf"));
-        FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
-        parameter.size = 30;
-        parameter.borderWidth = 1;
-        parameter.color = Color.YELLOW;
-        parameter.shadowOffsetX = 3;
-        parameter.shadowOffsetY = 3;
-        parameter.shadowColor = new Color(0, 0.5f, 0, 0.75f);
-        BitmapFont font24 = generator.generateFont(parameter); // font size 24 pixels
-        generator.dispose();
-
-        Label.LabelStyle labelStyle = new Label.LabelStyle();
-        labelStyle.font = font24;
-
-        Label label2 = new Label("True Type Font (.ttf) - Gdx FreeType",labelStyle);
-        label2.setSize(Gdx.graphics.getWidth()/Help_Guides*5,row_height);
-        label2.setPosition(col_width*2,Gdx.graphics.getHeight()-row_height*4);
-        stage.addActor(label2);
     }
 
     private void setupListeners() {
@@ -72,15 +63,15 @@ public class PauseScreen extends BaseScreen {
             public void clicked(InputEvent event, float x, float y) {
                 Gdx.app.log("Click","On Credit Clicked!");
                 //TODO: On Pause do not dispose the previous screen or save the previous screen state somewhere!
-                ScreenManager.getInstance().fadeInToScreen(Enumerations.Screen.GAME_SCREEN,0.5f);
+                ScreenManager.getInstance().fadeInToScreen(ScreenManager.getInstance().previousScreen,0.5f);
             }
         };
 
         this.onExitButtonClicked = new ClickListener() {
             @Override
-            public void clicked(InputEvent event, float x, float y) {
+            public void touchUp (InputEvent event, float x, float y, int pointer, int button) {
                 Gdx.app.log("Click","On Exit Clicked!");
-                Gdx.app.exit();
+//                Gdx.app.exit();
             }
         };
     }
@@ -89,21 +80,66 @@ public class PauseScreen extends BaseScreen {
 
         this.table.setFillParent(true);
 
-        this.table.setBounds(0, 0, screenWidth, screenHeight);
+        this.table.setBounds(0, 0, this.screenWidth, this.screenHeight);
 
-        this.addTitleImage();
 
-        this.addButton(Textures.creditButtonImageTexture,this.onBackButtonClicked, buttonWidth, buttonHeight);
+        Label titleLabel = new Label("Game Paused", labelStyle);
+        titleLabel.setColor(Color.NAVY);
+        titleLabel.setFontScale(this.titleLabelScale);
+        float titleLabelPadding = (this.screenWidth - titleLabel.getWidth() * this.titleLabelScale)/2;
+
+        this.table.add(titleLabel)
+                .left()
+                .padTop(this.screenHeight/8)
+                .padLeft(titleLabelPadding)
+                .row();
+
+        Label infoLabel = new Label("Current Progress: ", labelStyle);
+        infoLabel.setFontScale(this.infoLabelScale);
+        float infoLabelPadding = this.screenWidth/6;
+        this.table.add(infoLabel)
+                .left()
+                .padLeft(infoLabelPadding)
+                .row();
+
+        Label valueLabel = new Label("0 bricks", labelStyle);
+        valueLabel.setColor(Color.YELLOW);
+        valueLabel.setFontScale(this.titleLabelScale);
+        float valueLabelPadding = (this.screenWidth - valueLabel.getWidth() * this.titleLabelScale)/2;
+        this.table.add(valueLabel)
+                .left()
+                .padLeft(valueLabelPadding)
+                .row();
+
+        Label infoLabel2 = new Label("Destroyed", labelStyle);
+        infoLabel2.setFontScale(this.infoLabelScale);
+        this.table.add(infoLabel2)
+                .right()
+                .padRight(infoLabelPadding)
+                .padBottom(250)
+                .row();
+
+        this.addButton(Textures.backButtonImageTexture,this.onBackButtonClicked, buttonWidth, buttonHeight);
         this.addButton(Textures.exitButtonImageTexture,this.onExitButtonClicked, buttonWidth, buttonHeight);
 
         this.stage.addActor(this.table);
 
     }
 
-    private void addTitleImage() {
-        Image image = new Image(Textures.titleImageTexture);
-        this.table.add(image)
-                .size(2*screenWidth/3,screenHeight/2).row();
+    @Override
+    protected void addButton(Texture texture, EventListener eventListener, float width, float height){
+
+        Drawable drawable = new TextureRegionDrawable(new TextureRegion(texture));
+        ImageButton button = new ImageButton(drawable);
+
+        button.addListener(eventListener);
+
+        this.table.add(button)
+                .size(width,height)
+                .expandY()
+                .padBottom(300)
+                .row();
     }
+
 
 }

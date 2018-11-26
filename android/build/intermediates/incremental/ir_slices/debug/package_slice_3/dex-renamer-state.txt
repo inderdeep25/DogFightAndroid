@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-#Sun Nov 25 17:08:32 EST 2018
-=======
-#Fri Nov 23 19:09:06 EST 2018
+#Mon Nov 26 12:12:37 EST 2018
 base.0=/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/transforms/dexMerger/debug/3
 path.0=classes.dex
 renamed.0=classes.dex
->>>>>>> pause_screen

@@ -26,11 +26,6 @@ public class MenuScreen extends BaseScreen {
     private EventListener onExitButtonClicked;
 
     @Override
-    public void show(){
-        super.show();
-    }
-
-    @Override
     public void initializeVariables(){
         super.initializeVariables();
         this.backgroundImage = Textures.backgroundImageTexture;
@@ -61,7 +56,7 @@ public class MenuScreen extends BaseScreen {
             @Override
             public void clicked(InputEvent event, float x, float y) {
                 Gdx.app.log("Click","On Exit Clicked!");
-                Gdx.app.exit();
+//                Gdx.app.exit();
             }
         };
     }

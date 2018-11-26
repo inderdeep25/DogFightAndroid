@@ -10,4 +10,5 @@ public class ImageNames {
     public static final String creditButtonImage = "button_credit.png";
     public static final String exitButtonImage = "button_exitgame.png";
     public static final String backButtonImage = "button_back.png";
+    public static final String pausebackgroundImage = "pause_background.png";
 }

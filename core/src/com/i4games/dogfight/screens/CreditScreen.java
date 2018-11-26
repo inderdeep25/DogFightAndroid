@@ -47,7 +47,7 @@ public class CreditScreen extends BaseScreen {
             @Override
             public void clicked(InputEvent event, float x, float y) {
                 Gdx.app.log("Click","On Back Clicked!");
-                ScreenManager.getInstance().fadeInToScreen(Enumerations.Screen.MENU_SCREEN,0.5f);
+                ScreenManager.getInstance().fadeInToScreen(ScreenManager.getInstance().previousScreen,0.5f);
             }
         };
 

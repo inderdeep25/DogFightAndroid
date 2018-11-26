@@ -13,4 +13,5 @@ public class Textures {
     public static final Texture exitButtonImageTexture = new Texture(ImageNames.exitButtonImage);
     public static final Texture creditImageTexture = new Texture(ImageNames.creditTitleImage);
     public static final Texture backButtonImageTexture = new Texture(ImageNames.backButtonImage);
+    public static final Texture pausebackgroundImageTexture = new Texture(ImageNames.pausebackgroundImage);
 }
