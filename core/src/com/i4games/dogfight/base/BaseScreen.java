@@ -18,6 +18,7 @@ import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.i4games.dogfight.DogFight;
 import com.i4games.dogfight.enumerations.Enumerations;
 import com.i4games.dogfight.managers.ScreenManager;
+import com.i4games.dogfight.managers.SoundManager;
 import com.i4games.dogfight.util.FontGenerator;
 import com.i4games.dogfight.util.ScreenSettings;
 import com.i4games.dogfight.util.Textures;
@@ -31,6 +32,7 @@ public class BaseScreen implements Screen, InputProcessor {
     protected DogFight game;
     protected ScreenManager screenManager;
     protected FontGenerator fontGenerator;
+    protected SoundManager soundManager;
 
     protected float screenHeight;
     protected float screenWidth;
@@ -48,6 +50,7 @@ public class BaseScreen implements Screen, InputProcessor {
         game = DogFight.getInstance();
         screenManager = ScreenManager.getInstance();
         fontGenerator = FontGenerator.getInstance();
+        soundManager = SoundManager.getInstance();
     }
 
     @Override

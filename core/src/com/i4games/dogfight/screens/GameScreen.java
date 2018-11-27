@@ -1,10 +1,8 @@
 package com.i4games.dogfight.screens;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.graphics.g3d.particles.ParticleShader;
 import com.badlogic.gdx.scenes.scene2d.EventListener;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
@@ -15,10 +13,10 @@ import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.Align;
 import com.i4games.dogfight.PaddlePlayer;
-import com.i4games.dogfight.base.BasePlayer;
 import com.i4games.dogfight.base.BaseScreen;
 import com.i4games.dogfight.enumerations.Enumerations;
 import com.i4games.dogfight.managers.ScreenManager;
+import com.i4games.dogfight.managers.SoundManager;
 import com.i4games.dogfight.util.Textures;
 
 public class GameScreen extends BaseScreen {
@@ -38,6 +36,13 @@ public class GameScreen extends BaseScreen {
     @Override
     public void show(){
         super.show();
+        this.soundManager.pauseOrPlayBackgroundMusic();
+    }
+
+    @Override
+    public void hide(){
+        super.hide();
+        this.soundManager.pauseOrPlayBackgroundMusic();
     }
 
     @Override
