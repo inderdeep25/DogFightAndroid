@@ -13,4 +13,10 @@ public class Textures {
     public static final Texture exitButtonImageTexture = new Texture(ImageNames.exitButtonImage);
     public static final Texture creditImageTexture = new Texture(ImageNames.creditTitleImage);
     public static final Texture backButtonImageTexture = new Texture(ImageNames.backButtonImage);
+    public static final Texture pauseBackgroundImageTexture = new Texture(ImageNames.pauseBackgroundImage);
+    public static final Texture pauseButtonImageTexture = new Texture(ImageNames.pauseButtonImage);
+    public static final Texture emptyHeartImageTexture = new Texture(ImageNames.emptyHeartImage);
+    public static final Texture fullHeartImageTexture = new Texture(ImageNames.fullHeartImage);
+    public static final Texture paddleTexture = new Texture(ImageNames.paddleImage);
+
 }

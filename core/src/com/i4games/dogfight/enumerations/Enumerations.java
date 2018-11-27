@@ -13,33 +13,57 @@ public class Enumerations {
     public enum Screen {
 
         SPLASH_SCREEN {
+            private BaseScreen screen;
             public BaseScreen getScreen(Object... params) {
-                return new DogFightSplashScreen();
+                if (screen == null){
+                    screen = new DogFightSplashScreen();
+                }
+                return screen;
             }
         },
         MENU_SCREEN {
+            private BaseScreen screen;
             public BaseScreen getScreen(Object... params) {
-                return new MenuScreen();
+                if (screen == null){
+                    screen = new MenuScreen();
+                }
+                return screen;
             }
         },
         CREDIT_SCREEN {
+            private BaseScreen screen;
             public BaseScreen getScreen(Object... params) {
-                return new CreditScreen();
+                if (screen == null){
+                    screen = new CreditScreen();
+                }
+                return screen;
             }
         },
         GAME_SCREEN {
+            private BaseScreen screen;
             public BaseScreen getScreen(Object... params) {
-                return new GameScreen();
+                if (screen == null){
+                    screen = new GameScreen();
+                }
+                return screen;
             }
         },
         RESULT_SCREEN {
+            private BaseScreen screen;
             public BaseScreen getScreen(Object... params) {
-                return new ResultScreen();
+                if (screen == null){
+                    screen = new ResultScreen();
+                }
+                return screen;
             }
         },
         PAUSE_SCREEN {
+            private BaseScreen screen;
             public BaseScreen getScreen(Object... params) {
-                return new PauseScreen();
+                if (screen == null){
+                    screen = new PauseScreen();
+                }
+                return screen;
             }
         }
         ;
