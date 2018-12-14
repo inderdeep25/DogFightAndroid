@@ -62,7 +62,7 @@ public class MenuScreen extends BaseScreen {
             @Override
             public void clicked(InputEvent event, float x, float y) {
                 Gdx.app.log("Click","On Exit Clicked!");
-//                Gdx.app.exit();
+                Gdx.app.exit();
             }
         };
     }

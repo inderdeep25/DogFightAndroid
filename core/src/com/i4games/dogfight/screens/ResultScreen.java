@@ -108,7 +108,7 @@ public class ResultScreen extends BaseScreen {
                 .padLeft(infoLabelPadding)
                 .row();
 
-        String valueText = numberOfBricksDestroyed == 100 ? Integer.toString(numberOfBricksDestroyed) + " bricks" : "All bricks";
+        String valueText = numberOfBricksDestroyed <= 100 ? Integer.toString(numberOfBricksDestroyed) + " bricks" : "Everything";
         Label valueLabel = new Label( valueText, labelStyle);
         valueLabel.setColor(Color.YELLOW);
         valueLabel.setFontScale(this.titleLabelScale);

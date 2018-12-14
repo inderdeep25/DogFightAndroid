@@ -25,6 +25,8 @@ import com.i4games.dogfight.enumerations.Enumerations;
 import com.i4games.dogfight.managers.ScreenManager;
 import com.i4games.dogfight.util.Textures;
 
+import java.util.Random;
+
 public class GameScreen extends BaseScreen {
 
     private float buttonWidth;
@@ -37,14 +39,14 @@ public class GameScreen extends BaseScreen {
 
     private EventListener onPauseButtonClicked;
 
-    private boolean canStartGame = false;
+    public static boolean canStartGame = false;
 
     PaddleActor bluePaddle;
     float paddleY;
     float initialPaddleX;
 
     BallActor ball;
-    boolean isBallMoving = false;
+    public static boolean isBallMoving = false;
     float initialBallX;
     float initialBallY;
     float ballAccelaration = 30000;
@@ -297,8 +299,14 @@ public class GameScreen extends BaseScreen {
                 lifeTextures[2] = Textures.emptyHeartImageTexture;
             }
             else{
-                ResultScreen.resultText = "You lost all lives!";
+                ResultScreen.resultText = "You Loose";
                 ResultScreen.numberOfBricksDestroyed = numOfBricksKilled;
+
+                bricks = null;
+                numOfBricksKilled = 0;
+                isBallMoving = false;
+                canStartGame = true;
+                lifesLeft = 3;
                 screenManager.fadeInToScreen(Enumerations.Screen.RESULT_SCREEN,0.5f);
             }
 
@@ -310,6 +318,13 @@ public class GameScreen extends BaseScreen {
         Gdx.app.log("Bricks killed",Integer.toString(numOfBricksKilled));
 
         if( numOfBricksKilled == NUMBER_OF_BRICKS_IN_ROW * NUMBER_OF_ROWS){
+
+            bricks = null;
+            numOfBricksKilled = 0;
+            isBallMoving = false;
+            canStartGame = true;
+            lifesLeft = 3;
+
             ResultScreen.resultText = "You Won!";
             ResultScreen.numberOfBricksDestroyed = numOfBricksKilled;
             screenManager.fadeInToScreen(Enumerations.Screen.RESULT_SCREEN,0.5f);
@@ -346,6 +361,10 @@ public class GameScreen extends BaseScreen {
 
         if(pauseButton.getX() < screenX
                 && screenHeight - screenY > pauseButton.getY()){
+
+            this.isBallMoving = false;
+            this.canStartGame = true;
+
             PauseScreen.numberOfBricksDestroyed = numOfBricksKilled;
             ScreenManager.getInstance().fadeInToScreen(Enumerations.Screen.PAUSE_SCREEN,0.5f);
         }
@@ -359,7 +378,10 @@ public class GameScreen extends BaseScreen {
             ball.isMovingRight = true;
 //            ball.accelerateAtAngle(30);
 //            ball.accelarateTo(1,1);
-            ball.setRotation(45);
+
+            int angle = new Random().nextInt(75);
+
+            ball.setRotation(angle);
             ball.accelerateForward();
         }
 
