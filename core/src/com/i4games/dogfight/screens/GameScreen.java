@@ -256,6 +256,19 @@ public class GameScreen extends BaseScreen {
 
     }
 
+    private void resetGame(){
+
+        bricks = null;
+        numOfBricksKilled = 0;
+        isBallMoving = false;
+        canStartGame = true;
+        lifesLeft = 3;
+
+        lifeTextures[0] = Textures.fullHeartImageTexture;
+        lifeTextures[1] = Textures.fullHeartImageTexture;
+        lifeTextures[2] = Textures.fullHeartImageTexture;
+    }
+
     @Override
     public void render(float delta){
         ball.act(delta);
@@ -301,12 +314,7 @@ public class GameScreen extends BaseScreen {
             else{
                 ResultScreen.resultText = "You Loose";
                 ResultScreen.numberOfBricksDestroyed = numOfBricksKilled;
-
-                bricks = null;
-                numOfBricksKilled = 0;
-                isBallMoving = false;
-                canStartGame = true;
-                lifesLeft = 3;
+                resetGame();
                 screenManager.fadeInToScreen(Enumerations.Screen.RESULT_SCREEN,0.5f);
             }
 
@@ -315,18 +323,11 @@ public class GameScreen extends BaseScreen {
         this.table.reset();
         this.setupTable();
 
-        Gdx.app.log("Bricks killed",Integer.toString(numOfBricksKilled));
-
         if( numOfBricksKilled == NUMBER_OF_BRICKS_IN_ROW * NUMBER_OF_ROWS){
-
-            bricks = null;
-            numOfBricksKilled = 0;
-            isBallMoving = false;
-            canStartGame = true;
-            lifesLeft = 3;
 
             ResultScreen.resultText = "You Won!";
             ResultScreen.numberOfBricksDestroyed = numOfBricksKilled;
+            resetGame();
             screenManager.fadeInToScreen(Enumerations.Screen.RESULT_SCREEN,0.5f);
         }
 

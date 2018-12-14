@@ -5,9 +5,9 @@
     build-mode="COLD"
     density="xxhdpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
+    ir-eligibility="METHOD_ADDED"
     plugin-version="3.2.0"
-    timestamp="1544827365086"
+    timestamp="1544827681985"
     token="5232056519723461428"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -19,10 +19,10 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="5" />
+        duration="17" />
     <task
         name="verifier"
-        duration="1" />
+        duration="10" />
 
     <artifact
         location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/split-apk/debug/slices/slice_3.apk"
@@ -74,8 +74,8 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1544827365086"
+        ir-eligibility="METHOD_ADDED"
+        timestamp="1544827681985"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/split-apk/debug/slices/slice_3.apk"
