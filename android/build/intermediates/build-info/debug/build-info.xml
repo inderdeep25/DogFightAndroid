@@ -5,48 +5,36 @@
     build-mode="COLD"
     density="xxhdpi"
     format="10"
-    ir-eligibility="CLASS_ADDED"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.2.0"
-    timestamp="1544797712900"
+    timestamp="1544815452370"
     token="5232056519723461428"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="111" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="31" />
+        duration="6" />
     <task
         name="verifier"
-        duration="5" />
+        duration="2" />
 
     <artifact
-        location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/split-apk/debug/slices/slice_9.apk"
-        type="SPLIT" />
-    <artifact
         location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/split-apk/debug/slices/slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/split-apk/debug/slices/slice_3.apk"
         type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1544794880765"
+        timestamp="1544810407698"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
-        <artifact
-            location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/split-apk/debug/slices/slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/instant-run-apk/debug/android-debug.apk"
-            type="SPLIT_MAIN" />
         <artifact
             location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
@@ -60,10 +48,10 @@
             location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
             location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/split-apk/debug/slices/slice_2.apk"
@@ -72,25 +60,43 @@
             location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
+            location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
             location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
         <artifact
             location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
+        <artifact
+            location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/instant-run-apk/debug/android-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="CLASS_ADDED"
-        timestamp="1544797712900"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1544812643607"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
-        <artifact
-            location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="FIELD_ADDED"
+        timestamp="1544814071898"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1544815452370"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Volumes/DATA/Workspace/Android/DogFightAndroid/android/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
     </build>
 

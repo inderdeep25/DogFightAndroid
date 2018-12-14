@@ -12,6 +12,7 @@ import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.Align;
+import com.i4games.dogfight.actors.BallActor;
 import com.i4games.dogfight.actors.PaddleActor;
 import com.i4games.dogfight.base.BaseScreen;
 import com.i4games.dogfight.enumerations.Enumerations;
@@ -32,6 +33,13 @@ public class GameScreen extends BaseScreen {
 
     PaddleActor bluePaddle;
     float paddleY;
+    float initialPaddleX;
+
+    BallActor ball;
+    boolean isBallMoving = false;
+    float initialBallX;
+    float initialBallY;
+    float ballAccelaration = 30000;
 
     @Override
     public void show(){
@@ -45,31 +53,32 @@ public class GameScreen extends BaseScreen {
         this.soundManager.pauseOrPlayBackgroundMusic();
     }
 
-    @Override
-    public void initializeVariables(){
-        super.initializeVariables();
-        this.buttonWidth = 100;
-        this.buttonHeight = 100;
-
-        this.labelScale = 0.6f;
-        this.smallLabelScale = 0.3f;
-        this.addPlayer();
-        this.setupListeners();
-        this.setupLabelStyles();
-        this.setupTable();
-
-    }
-
     private void addPlayer(){
 
         bluePaddle = new PaddleActor(Textures.paddleTexture);
-        float paddleX = this.screenWidth/2 - bluePaddle.getWidth();
+        initialPaddleX = this.screenWidth/2 - bluePaddle.getWidth();
         paddleY = 250;
-        bluePaddle.setPosition(paddleX, paddleY);
+        bluePaddle.setPosition(initialPaddleX, paddleY);
         bluePaddle.setScale(1.5f);
+
+        bluePaddle.setWorldBounds(screenWidth,screenHeight - buttonHeight);
 
         this.stage.addActor(bluePaddle);
 
+    }
+
+    private void addBall(){
+        ball = new BallActor(bluePaddle, Textures.ballTexture);
+        ball.setScale(0.8f);
+
+        initialBallX = screenWidth/2 - ball.getScaledWidth();
+        initialBallY = paddleY + bluePaddle.getScaledHeight();
+
+        ball.setPosition(initialBallX, initialBallY);
+
+        ball.setWorldBounds(screenWidth,screenHeight - buttonHeight);
+
+        this.stage.addActor(ball);
     }
 
 
@@ -157,6 +166,30 @@ public class GameScreen extends BaseScreen {
 
     }
 
+
+    @Override
+    public void initializeVariables(){
+        super.initializeVariables();
+        this.buttonWidth = 100;
+        this.buttonHeight = 100;
+
+        this.labelScale = 0.6f;
+        this.smallLabelScale = 0.3f;
+        this.addPlayer();
+        this.addBall();
+        this.setupListeners();
+        this.setupLabelStyles();
+        this.setupTable();
+
+    }
+
+    @Override
+    public void render(float delta){
+        ball.act(delta);
+        super.render(delta);
+
+    }
+
     @Override
     protected void addButton(Texture texture, EventListener eventListener, float width, float height){
 
@@ -176,31 +209,38 @@ public class GameScreen extends BaseScreen {
     //Player input
     @Override
     public boolean touchDown(int screenX, int screenY, int pointer, int button) {
-//
-//        bluePaddle.setPosition(screenX,paddleY);
-//
-//        Gdx.app.log("touchDown","Screen X : " + Integer.toString(screenX));
-//        Gdx.app.log("touchDown","Screen Y : " + Integer.toString(screenY));
-//        Gdx.app.log("touchDown","Screen Pointer : " + Integer.toString(pointer));
+
+        if(!isBallMoving){
+            isBallMoving = true;
+            //TODO: Start the ball movement!
+            ball.setAcceleration(ballAccelaration);
+            ball.isMovingUp = true;
+            ball.isMovingRight = true;
+//            ball.accelerateAtAngle(30);
+//            ball.accelarateTo(1,1);
+            ball.setRotation(45);
+            ball.accelerateForward();
+        }
 
         return true;
     }
 
     @Override
     public boolean touchUp(int screenX, int screenY, int pointer, int button) {
-//        bluePaddle.setPosition(screenX,paddleY);
-//        Gdx.app.log("touchUp","Screen X : " + Integer.toString(screenX));
-//        Gdx.app.log("touchUp","Screen Y : " + Integer.toString(screenY));
-//        Gdx.app.log("touchUp","Screen Pointer : " + Integer.toString(pointer));
+        bluePaddle.canActorMove = isBallMoving;
         return true;
     }
 
     @Override
     public boolean touchDragged(int screenX, int screenY, int pointer) {
-        bluePaddle.setPosition(screenX - bluePaddle.getWidth(),paddleY);
-//        if(screenX + bluePaddle.getWidth() > screenWidth){
-//            screenX -= ;
-//        }
+        if (bluePaddle.canActorMove){
+            float paddleX = screenX - bluePaddle.getScaledWidth();
+            if(paddleX <= 0) {
+                paddleX = 0;
+            }
+            bluePaddle.setPosition(paddleX, paddleY);
+        }
+
         return true;
     }
 

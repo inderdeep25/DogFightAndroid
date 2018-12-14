@@ -1,18 +1,29 @@
 package com.i4games.dogfight.util;
 
 public class ImageNames {
-    public static final String splashScreenLogo = "ifourgames.png";
-    public static final String backgroundImage = "background.png";
-    public static final String splashBackgroundImage = "background_with_overlay.png";
-    public static final String titleImage = "title_dogfight.png";
-    public static final String creditTitleImage = "title_credit.png";
-    public static final String startButtonImage = "button_startgame.png";
-    public static final String creditButtonImage = "button_credit.png";
-    public static final String exitButtonImage = "button_exitgame.png";
-    public static final String backButtonImage = "button_back.png";
-    public static final String pauseBackgroundImage = "pause_background.png";
-    public static final String pauseButtonImage = "button_pause.png";
-    public static final String emptyHeartImage = "hud_emptyheart.png";
-    public static final String fullHeartImage = "hud_fullheart_c.png";
-    public static final String paddleImage = "paddleBlue.png";
+
+    //Background images
+    public static final String backgroundImage = "images/background.png";
+    public static final String pauseBackgroundImage = "images/pause_background.png";
+    public static final String splashBackgroundImage = "images/background_with_overlay.png";
+
+    //Logos and/or Title Images
+    public static final String splashScreenLogo = "images/ifourgames.png";
+    public static final String titleImage = "images/title_dogfight.png";
+    public static final String creditTitleImage = "images/title_credit.png";
+
+    //Button Images
+    public static final String startButtonImage = "images/button_startgame.png";
+    public static final String creditButtonImage = "images/button_credit.png";
+    public static final String exitButtonImage = "images/button_exitgame.png";
+    public static final String backButtonImage = "images/button_back.png";
+    public static final String pauseButtonImage = "images/button_pause.png";
+
+    //HUDs
+    public static final String emptyHeartImage = "images/hud_emptyheart.png";
+    public static final String fullHeartImage = "images/hud_fullheart_c.png";
+
+    //Game Actors
+    public static final String paddleImage = "images/paddleBlue.png";
+    public static final String ballImage = "images/ball.png";
 }
