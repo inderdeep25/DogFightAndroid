@@ -26,4 +26,5 @@ public class ImageNames {
     //Game Actors
     public static final String paddleImage = "images/paddleBlue.png";
     public static final String ballImage = "images/ball.png";
+    public static final String brickImage = "images/element_purple_rectangle_glossy.png";
 }

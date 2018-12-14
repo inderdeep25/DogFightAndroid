@@ -31,5 +31,6 @@ public class Textures {
     //Game actors Textures
     public static final Texture paddleTexture = new Texture(ImageNames.paddleImage);
     public static final Texture ballTexture = new Texture(ImageNames.ballImage);
+    public static final Texture brickTexture = new Texture(ImageNames.brickImage);
 
 }

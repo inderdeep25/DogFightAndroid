@@ -47,7 +47,6 @@ public class BaseScreen implements Screen, InputProcessor {
 
     public void reinitialize(){
         stage = new Stage(new ScreenViewport());
-        Gdx.input.setInputProcessor(this);
         table = new Table();
         batch = new SpriteBatch();
         game = DogFight.getInstance();
@@ -60,6 +59,7 @@ public class BaseScreen implements Screen, InputProcessor {
     public void show() {
         this.reinitialize();
         this.initializeVariables();
+        Gdx.input.setInputProcessor(stage);
     }
 
     public void initializeVariables() {
@@ -79,7 +79,7 @@ public class BaseScreen implements Screen, InputProcessor {
         this.batch.draw(backgroundImage,0,0,screenWidth,screenHeight);
         this.batch.end();
 
-        this.stage.setDebugAll(true);
+//        this.stage.setDebugAll(true);
 
         this.stage.act(delta);
         this.stage.draw();

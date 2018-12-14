@@ -17,6 +17,7 @@ import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.Align;
 import com.i4games.dogfight.actors.BallActor;
+import com.i4games.dogfight.actors.Brick;
 import com.i4games.dogfight.actors.PaddleActor;
 import com.i4games.dogfight.base.BaseScreen;
 import com.i4games.dogfight.enumerations.Enumerations;
@@ -52,14 +53,18 @@ public class GameScreen extends BaseScreen {
                                 Textures.fullHeartImageTexture,
                                 Textures.fullHeartImageTexture};
 
-    Image heartImage;
-    Image heart2Image;
-    Image heart3Image;
+    private int NUMBER_OF_BRICKS_IN_ROW = 10;
+    private int NUMBER_OF_ROWS = 10;
+
+    int numOfBricksKilled = 0;
+
+    Brick bricks[][];
 
     @Override
     public void show(){
         super.show();
         this.soundManager.pauseOrPlayBackgroundMusic();
+        Gdx.input.setInputProcessor(this);
     }
 
     @Override
@@ -97,6 +102,40 @@ public class GameScreen extends BaseScreen {
         this.stage.addActor(ball);
     }
 
+    private void addBricks(){
+
+        NUMBER_OF_ROWS = 10;
+        NUMBER_OF_BRICKS_IN_ROW = 10;
+
+        bricks = new Brick[NUMBER_OF_BRICKS_IN_ROW][NUMBER_OF_ROWS];
+
+        float brickScale = 1.2f;
+
+        Brick brick = new Brick(Textures.brickTexture);
+        brick.setScale(brickScale);
+
+        float initialBrickX = 100;
+        float initialBrickY = screenHeight - screenHeight/2;
+
+        for(int i = 0 ; i < NUMBER_OF_ROWS; i++){
+
+            for (int j = 0 ; j < NUMBER_OF_BRICKS_IN_ROW; j++){
+
+                Brick newBrick = new Brick(Textures.brickTexture);
+                newBrick.setScale(brickScale);
+                newBrick.setPosition(initialBrickX + j * brick.getScaledWidth() + 100,initialBrickY);
+
+                bricks[i][j] = newBrick;
+
+                this.stage.addActor(newBrick);
+
+            }
+
+            initialBrickY += brick.getScaledHeight();
+
+        }
+
+    }
 
     private void setupLabelStyles() {
 
@@ -160,9 +199,9 @@ public class GameScreen extends BaseScreen {
 
     private void addHeartImages() {
 
-        heartImage = new Image(lifeTextures[0]);
-        heart2Image = new Image(lifeTextures[1]);
-        heart3Image = new Image(lifeTextures[2]);
+        Image heartImage = new Image(lifeTextures[0]);
+        Image heart2Image = new Image(lifeTextures[1]);
+        Image heart3Image = new Image(lifeTextures[2]);
 
         float heartTopPadding = heartImage.getHeight()/2;
 
@@ -191,6 +230,7 @@ public class GameScreen extends BaseScreen {
 
         this.labelScale = 0.6f;
         this.smallLabelScale = 0.3f;
+        this.addBricks();
         this.addPlayer();
         this.addBall();
         this.setupListeners();
@@ -202,6 +242,20 @@ public class GameScreen extends BaseScreen {
     @Override
     public void render(float delta){
         ball.act(delta);
+
+        for (int i = 0 ; i < NUMBER_OF_ROWS; i++){
+            for(int j = 0 ; j < NUMBER_OF_BRICKS_IN_ROW; j++){
+                if(ball.overlaps(bricks[i][j])){
+
+                    if(!bricks[i][j].isRemoved){
+                        numOfBricksKilled++;
+                        bricks[i][j].remove();
+                        bricks[i][j].isRemoved = true;
+                    }
+
+                }
+            }
+        }
 
         if(ball.getY() < 0){
             Gdx.app.log("Ball dead","take life!");
@@ -234,6 +288,12 @@ public class GameScreen extends BaseScreen {
             this.table.reset();
             this.setupTable();
 
+        }
+
+        Gdx.app.log("Bricks killed",Integer.toString(numOfBricksKilled));
+
+        if( numOfBricksKilled == NUMBER_OF_BRICKS_IN_ROW * NUMBER_OF_ROWS){
+            screenManager.fadeInToScreen(Enumerations.Screen.RESULT_SCREEN,0.5f);
         }
 
         super.render(delta);
