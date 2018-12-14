@@ -12,11 +12,10 @@ import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.Align;
-import com.i4games.dogfight.PaddlePlayer;
+import com.i4games.dogfight.actors.PaddleActor;
 import com.i4games.dogfight.base.BaseScreen;
 import com.i4games.dogfight.enumerations.Enumerations;
 import com.i4games.dogfight.managers.ScreenManager;
-import com.i4games.dogfight.managers.SoundManager;
 import com.i4games.dogfight.util.Textures;
 
 public class GameScreen extends BaseScreen {
@@ -31,7 +30,8 @@ public class GameScreen extends BaseScreen {
 
     private EventListener onPauseButtonClicked;
 
-    PaddlePlayer bluePaddle;
+    PaddleActor bluePaddle;
+    float paddleY;
 
     @Override
     public void show(){
@@ -62,14 +62,13 @@ public class GameScreen extends BaseScreen {
 
     private void addPlayer(){
 
-        bluePaddle = new PaddlePlayer();
-        bluePaddle.setTexture(Textures.paddleTexture);
-        bluePaddle.setPosition(250, 700);
-        bluePaddle.setScale(5.0f);
-        bluePaddle.setBoundaryRectangle();
-        this.stage.addActor(bluePaddle);
+        bluePaddle = new PaddleActor(Textures.paddleTexture);
+        float paddleX = this.screenWidth/2 - bluePaddle.getWidth();
+        paddleY = 250;
+        bluePaddle.setPosition(paddleX, paddleY);
+        bluePaddle.setScale(1.5f);
 
-        Gdx.app.log("Add Player Paddle","");
+        this.stage.addActor(bluePaddle);
 
     }
 
@@ -172,6 +171,37 @@ public class GameScreen extends BaseScreen {
                 .padLeft(buttonWidth)
                 .padTop(buttonHeight/2);
 
+    }
+
+    //Player input
+    @Override
+    public boolean touchDown(int screenX, int screenY, int pointer, int button) {
+//
+//        bluePaddle.setPosition(screenX,paddleY);
+//
+//        Gdx.app.log("touchDown","Screen X : " + Integer.toString(screenX));
+//        Gdx.app.log("touchDown","Screen Y : " + Integer.toString(screenY));
+//        Gdx.app.log("touchDown","Screen Pointer : " + Integer.toString(pointer));
+
+        return true;
+    }
+
+    @Override
+    public boolean touchUp(int screenX, int screenY, int pointer, int button) {
+//        bluePaddle.setPosition(screenX,paddleY);
+//        Gdx.app.log("touchUp","Screen X : " + Integer.toString(screenX));
+//        Gdx.app.log("touchUp","Screen Y : " + Integer.toString(screenY));
+//        Gdx.app.log("touchUp","Screen Pointer : " + Integer.toString(pointer));
+        return true;
+    }
+
+    @Override
+    public boolean touchDragged(int screenX, int screenY, int pointer) {
+        bluePaddle.setPosition(screenX - bluePaddle.getWidth(),paddleY);
+//        if(screenX + bluePaddle.getWidth() > screenWidth){
+//            screenX -= ;
+//        }
+        return true;
     }
 
 }

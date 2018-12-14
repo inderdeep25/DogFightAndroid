@@ -1,7 +1,6 @@
 package com.i4games.dogfight.base;
 
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Batch;
@@ -11,10 +10,9 @@ import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.i4games.dogfight.util.ScreenSettings;
-import com.i4games.dogfight.util.Textures;
 
 
-public class BasePlayer extends Actor {
+public class BaseActor extends Actor {
 
     private TextureRegion textureRegion;
     private Rectangle rectangle;
@@ -24,7 +22,7 @@ public class BasePlayer extends Actor {
     protected float screenWidth;
 
 
-    public BasePlayer() {
+    public BaseActor() {
         super();
         textureRegion = new TextureRegion();
         rectangle = new Rectangle();
@@ -33,7 +31,7 @@ public class BasePlayer extends Actor {
         screenWidth = ScreenSettings.getInstance().width;
     }
 
-    public BasePlayer(float x, float y, Stage s){
+    public BaseActor(float x, float y, Stage s){
         super();
 
         setPosition(x, y);
@@ -59,7 +57,7 @@ public class BasePlayer extends Actor {
         rectangle.setSize(t.getWidth(), t.getHeight());
     }
 
-    public boolean overlaps(BasePlayer other)
+    public boolean overlaps(BaseActor other)
     {
         return this.getRectangle().overlaps( other.getRectangle() );
     }
@@ -71,6 +69,32 @@ public class BasePlayer extends Actor {
 
         float [] vertices = {0, 0, w, h, 0, h};
         boundaryPolygon = new Polygon(vertices);
+    }
+
+    public void draw (Batch batch, float parentAlpha) {
+
+        Color c = getColor(); // used to apply tint color effect
+
+        batch.setColor(c.r, c.g, c.b, c.a);
+
+
+        float y = this.getY();
+        float x = this.getX();
+        float width = this.getWidth()*this.getScaleX();
+        float height = this.getHeight()*this.getScaleY();
+
+        if(x - width < 0){
+            x = 0;
+        }
+
+        if (width + x > screenWidth){
+            x = screenWidth - width;
+        }
+
+        batch.draw(textureRegion, x, y, width, height);
+
+        super.draw(batch, parentAlpha);
+
     }
 
 

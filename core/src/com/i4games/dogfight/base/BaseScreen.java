@@ -9,6 +9,8 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.EventListener;
+import com.badlogic.gdx.scenes.scene2d.InputEvent;
+import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
@@ -45,6 +47,7 @@ public class BaseScreen implements Screen, InputProcessor {
 
     public void reinitialize(){
         stage = new Stage(new ScreenViewport());
+        Gdx.input.setInputProcessor(this);
         table = new Table();
         batch = new SpriteBatch();
         game = DogFight.getInstance();
@@ -64,8 +67,6 @@ public class BaseScreen implements Screen, InputProcessor {
         this.isDisposed = false;
         this.backgroundImage = Textures.backgroundImageTexture;
 
-        Gdx.input.setInputProcessor(stage);
-
         screenHeight = ScreenSettings.getInstance().height;
         screenWidth = ScreenSettings.getInstance().width;
     }
@@ -77,6 +78,8 @@ public class BaseScreen implements Screen, InputProcessor {
         this.batch.begin();
         this.batch.draw(backgroundImage,0,0,screenWidth,screenHeight);
         this.batch.end();
+
+        this.stage.setDebugAll(true);
 
         this.stage.act(delta);
         this.stage.draw();
