@@ -3,11 +3,15 @@ package com.i4games.dogfight.screens;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.EventListener;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
+import com.badlogic.gdx.scenes.scene2d.Touchable;
+import com.badlogic.gdx.scenes.scene2d.ui.Cell;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
+import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
@@ -31,6 +35,8 @@ public class GameScreen extends BaseScreen {
 
     private EventListener onPauseButtonClicked;
 
+    private boolean canStartGame = false;
+
     PaddleActor bluePaddle;
     float paddleY;
     float initialPaddleX;
@@ -40,6 +46,15 @@ public class GameScreen extends BaseScreen {
     float initialBallX;
     float initialBallY;
     float ballAccelaration = 30000;
+
+    int lifesLeft = 3;
+    Texture lifeTextures[] = {Textures.fullHeartImageTexture,
+                                Textures.fullHeartImageTexture,
+                                Textures.fullHeartImageTexture};
+
+    Image heartImage;
+    Image heart2Image;
+    Image heart3Image;
 
     @Override
     public void show(){
@@ -51,6 +66,7 @@ public class GameScreen extends BaseScreen {
     public void hide(){
         super.hide();
         this.soundManager.pauseOrPlayBackgroundMusic();
+        this.canStartGame = false;
     }
 
     private void addPlayer(){
@@ -144,9 +160,9 @@ public class GameScreen extends BaseScreen {
 
     private void addHeartImages() {
 
-        Image heartImage = new Image(Textures.fullHeartImageTexture);
-        Image heart2Image = new Image(Textures.emptyHeartImageTexture);
-        Image heart3Image = new Image(Textures.emptyHeartImageTexture);
+        heartImage = new Image(lifeTextures[0]);
+        heart2Image = new Image(lifeTextures[1]);
+        heart3Image = new Image(lifeTextures[2]);
 
         float heartTopPadding = heartImage.getHeight()/2;
 
@@ -186,6 +202,40 @@ public class GameScreen extends BaseScreen {
     @Override
     public void render(float delta){
         ball.act(delta);
+
+        if(ball.getY() < 0){
+            Gdx.app.log("Ball dead","take life!");
+            lifesLeft--;
+            ball.stopMovement();
+
+            this.isBallMoving = false;
+            this.canStartGame = true;
+
+            ball.setPosition(initialBallX,initialBallY);
+            bluePaddle.canActorMove = false;
+            bluePaddle.setPosition(initialPaddleX,paddleY);
+
+            if(lifesLeft == 2){
+                lifeTextures[2] = Textures.emptyHeartImageTexture;
+            }
+            else if(lifesLeft == 1){
+                lifeTextures[2] = Textures.emptyHeartImageTexture;
+                lifeTextures[1] = Textures.emptyHeartImageTexture;
+            }
+            else if(lifesLeft == 0){
+                lifeTextures[0] = Textures.emptyHeartImageTexture;
+                lifeTextures[1] = Textures.emptyHeartImageTexture;
+                lifeTextures[2] = Textures.emptyHeartImageTexture;
+            }
+            else{
+                screenManager.fadeInToScreen(Enumerations.Screen.RESULT_SCREEN,0.5f);
+            }
+
+            this.table.reset();
+            this.setupTable();
+
+        }
+
         super.render(delta);
 
     }
@@ -196,6 +246,7 @@ public class GameScreen extends BaseScreen {
         Drawable drawable = new TextureRegionDrawable(new TextureRegion(texture));
         ImageButton button = new ImageButton(drawable);
 
+        button.setTouchable(Touchable.enabled);
         button.addListener(eventListener);
 
         this.table.add(button)
@@ -210,8 +261,9 @@ public class GameScreen extends BaseScreen {
     @Override
     public boolean touchDown(int screenX, int screenY, int pointer, int button) {
 
-        if(!isBallMoving){
+        if(!isBallMoving && canStartGame){
             isBallMoving = true;
+            bluePaddle.canActorMove = true;
             //TODO: Start the ball movement!
             ball.setAcceleration(ballAccelaration);
             ball.isMovingUp = true;
@@ -222,12 +274,13 @@ public class GameScreen extends BaseScreen {
             ball.accelerateForward();
         }
 
+        this.canStartGame = true;
+
         return true;
     }
 
     @Override
     public boolean touchUp(int screenX, int screenY, int pointer, int button) {
-        bluePaddle.canActorMove = isBallMoving;
         return true;
     }
 

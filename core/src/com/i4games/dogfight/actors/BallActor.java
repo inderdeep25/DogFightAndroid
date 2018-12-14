@@ -5,12 +5,15 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.math.Vector2;
 import com.i4games.dogfight.base.BaseActor;
 
+import java.util.Random;
+
 public class BallActor extends BaseActor {
 
     public boolean isMovingRight;
     public boolean isMovingUp;
 
-    PaddleActor paddle;
+    private PaddleActor paddle;
+    private boolean paddleHitLeftHalf = false;
 
     public BallActor(PaddleActor paddle, Texture texture){
         super();
@@ -20,7 +23,7 @@ public class BallActor extends BaseActor {
         this.setPosition(screenWidth/2 - this.getWidth()/2, 0 + this.getHeight());
     }
 
-    boolean didBallHitRightBorder(){
+    private boolean didBallHitRightBorder(){
 
         boolean result = false;
 
@@ -31,7 +34,7 @@ public class BallActor extends BaseActor {
         return result;
     }
 
-    boolean didBallHitLeftBorder(){
+    private boolean didBallHitLeftBorder(){
 
         boolean result = false;
 
@@ -42,7 +45,7 @@ public class BallActor extends BaseActor {
         return result;
     }
 
-    boolean didBallHitTopBorder(){
+    private boolean didBallHitTopBorder(){
 
         boolean result = false;
 
@@ -53,18 +56,17 @@ public class BallActor extends BaseActor {
         return result;
     }
 
-    boolean paddleHitLeftHalf=false;
-    boolean didBallHitPaddle(){
+    private boolean didBallHitPaddle(){
         boolean result = false;
 
         if(this.overlaps(paddle)){
+
             if(this.getX() < (paddle.getX() + paddle.getWidth()/2)){
                 paddleHitLeftHalf = true;
-                Gdx.app.log("Paddle hit side", "Left Half");
             }else{
-                Gdx.app.log("Paddle hit side", "Right Half");
                 paddleHitLeftHalf = false;
             }
+
             result = true;
         }
 
@@ -131,6 +133,9 @@ public class BallActor extends BaseActor {
             this.stopMovement();
 
             float angle = 180 + this.accelarationAngle;
+
+            float randomAddition = new Random().nextInt(30);
+            angle += randomAddition;
             angle = paddleHitLeftHalf ? -1 * angle - 180: angle;
             this.setRotation(angle);
 
