@@ -7,6 +7,7 @@ import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.EventListener;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Touchable;
+import com.badlogic.gdx.scenes.scene2d.ui.Button;
 import com.badlogic.gdx.scenes.scene2d.ui.Cell;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
@@ -58,7 +59,7 @@ public class GameScreen extends BaseScreen {
 
     int numOfBricksKilled = 0;
 
-    Brick bricks[][];
+    public static Brick bricks[][];
 
     @Override
     public void show(){
@@ -102,37 +103,48 @@ public class GameScreen extends BaseScreen {
         this.stage.addActor(ball);
     }
 
-    private void addBricks(){
+    private void addBricks() {
 
         NUMBER_OF_ROWS = 10;
         NUMBER_OF_BRICKS_IN_ROW = 10;
 
-        bricks = new Brick[NUMBER_OF_BRICKS_IN_ROW][NUMBER_OF_ROWS];
+        if (bricks == null) {
 
-        float brickScale = 1.2f;
+            bricks = new Brick[NUMBER_OF_BRICKS_IN_ROW][NUMBER_OF_ROWS];
 
-        Brick brick = new Brick(Textures.brickTexture);
-        brick.setScale(brickScale);
+            float brickScale = 1.2f;
 
-        float initialBrickX = 100;
-        float initialBrickY = screenHeight - screenHeight/2;
+            Brick brick = new Brick(Textures.brickTexture);
+            brick.setScale(brickScale);
 
-        for(int i = 0 ; i < NUMBER_OF_ROWS; i++){
+            float initialBrickX = 100;
+            float initialBrickY = screenHeight - screenHeight / 2;
 
-            for (int j = 0 ; j < NUMBER_OF_BRICKS_IN_ROW; j++){
+            for (int i = 0; i < NUMBER_OF_ROWS; i++) {
 
-                Brick newBrick = new Brick(Textures.brickTexture);
-                newBrick.setScale(brickScale);
-                newBrick.setPosition(initialBrickX + j * brick.getScaledWidth() + 100,initialBrickY);
+                for (int j = 0; j < NUMBER_OF_BRICKS_IN_ROW; j++) {
 
-                bricks[i][j] = newBrick;
+                    Brick newBrick = new Brick(Textures.brickTexture);
+                    newBrick.setScale(brickScale);
+                    newBrick.setPosition(initialBrickX + j * brick.getScaledWidth() + 100, initialBrickY);
 
-                this.stage.addActor(newBrick);
+                    bricks[i][j] = newBrick;
+
+                    this.stage.addActor(newBrick);
+
+                }
+
+                initialBrickY += brick.getScaledHeight();
 
             }
-
-            initialBrickY += brick.getScaledHeight();
-
+        }else {
+            for (int i = 0; i < NUMBER_OF_ROWS; i++) {
+                for (int j = 0; j < NUMBER_OF_BRICKS_IN_ROW; j++) {
+                    if(!bricks[i][j].isRemoved){
+                        this.stage.addActor(bricks[i][j]);
+                    }
+                }
+            }
         }
 
     }
@@ -151,6 +163,7 @@ public class GameScreen extends BaseScreen {
             public void clicked(InputEvent event, float x, float y) {
                 Gdx.app.log("Click","On Credit Clicked!");
                 //TODO: On Pause do not dispose the previous screen or save the previous screen state somewhere!
+                PauseScreen.numberOfBricksDestroyed = numOfBricksKilled;
                 ScreenManager.getInstance().fadeInToScreen(Enumerations.Screen.PAUSE_SCREEN,0.5f);
             }
         };
@@ -175,7 +188,7 @@ public class GameScreen extends BaseScreen {
 
     private void addCurrentProgressLabels() {
 
-        Label titleLabel = new Label("0 ", labelStyle);
+        Label titleLabel = new Label(Integer.toString(numOfBricksKilled) + " ", labelStyle);
         titleLabel.setFontScale(this.labelScale);
 
         float titleLeftPadding = 50;
@@ -210,9 +223,11 @@ public class GameScreen extends BaseScreen {
         this.table.add(heart3Image).padLeft(10).padTop(heartTopPadding);
 
     }
+
+    private ImageButton pauseButton;
     private void addPauseButton() {
 
-        this.addButton(Textures.pauseButtonImageTexture,this.onPauseButtonClicked, buttonWidth, buttonHeight);
+        pauseButton = this.addPauseButton(Textures.pauseButtonImageTexture,this.onPauseButtonClicked, buttonWidth, buttonHeight);
 
         Label pauseLabel = new Label("Pause", labelStyle);
         pauseLabel.setAlignment(Align.bottomLeft);
@@ -282,17 +297,21 @@ public class GameScreen extends BaseScreen {
                 lifeTextures[2] = Textures.emptyHeartImageTexture;
             }
             else{
+                ResultScreen.resultText = "You lost all lives!";
+                ResultScreen.numberOfBricksDestroyed = numOfBricksKilled;
                 screenManager.fadeInToScreen(Enumerations.Screen.RESULT_SCREEN,0.5f);
             }
 
-            this.table.reset();
-            this.setupTable();
-
         }
+
+        this.table.reset();
+        this.setupTable();
 
         Gdx.app.log("Bricks killed",Integer.toString(numOfBricksKilled));
 
         if( numOfBricksKilled == NUMBER_OF_BRICKS_IN_ROW * NUMBER_OF_ROWS){
+            ResultScreen.resultText = "You Won!";
+            ResultScreen.numberOfBricksDestroyed = numOfBricksKilled;
             screenManager.fadeInToScreen(Enumerations.Screen.RESULT_SCREEN,0.5f);
         }
 
@@ -300,8 +319,7 @@ public class GameScreen extends BaseScreen {
 
     }
 
-    @Override
-    protected void addButton(Texture texture, EventListener eventListener, float width, float height){
+    private ImageButton addPauseButton(Texture texture, EventListener eventListener, float width, float height){
 
         Drawable drawable = new TextureRegionDrawable(new TextureRegion(texture));
         ImageButton button = new ImageButton(drawable);
@@ -315,11 +333,22 @@ public class GameScreen extends BaseScreen {
                 .padLeft(buttonWidth)
                 .padTop(buttonHeight/2);
 
+        return button;
+
     }
 
     //Player input
     @Override
     public boolean touchDown(int screenX, int screenY, int pointer, int button) {
+
+        Gdx.app.log("Button Y",Float.toString(pauseButton.getY()));
+        Gdx.app.log("Screen Y",Float.toString(screenY));
+
+        if(pauseButton.getX() < screenX
+                && screenHeight - screenY > pauseButton.getY()){
+            PauseScreen.numberOfBricksDestroyed = numOfBricksKilled;
+            ScreenManager.getInstance().fadeInToScreen(Enumerations.Screen.PAUSE_SCREEN,0.5f);
+        }
 
         if(!isBallMoving && canStartGame){
             isBallMoving = true;

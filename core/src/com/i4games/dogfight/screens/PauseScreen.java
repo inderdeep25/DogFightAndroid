@@ -31,9 +31,12 @@ public class PauseScreen extends BaseScreen {
     private EventListener onBackButtonClicked;
     private EventListener onExitButtonClicked;
 
+    public static int numberOfBricksDestroyed = 0;
+
     @Override
     public void show(){
         super.show();
+        Gdx.input.setInputProcessor(stage);
     }
 
     @Override
@@ -105,7 +108,7 @@ public class PauseScreen extends BaseScreen {
                 .padLeft(infoLabelPadding)
                 .row();
 
-        Label valueLabel = new Label("0 bricks", labelStyle);
+        Label valueLabel = new Label(Integer.toString(numberOfBricksDestroyed) + " bricks", labelStyle);
         valueLabel.setColor(Color.YELLOW);
         valueLabel.setFontScale(this.titleLabelScale);
         float valueLabelPadding = (this.screenWidth - valueLabel.getWidth() * this.titleLabelScale)/2;

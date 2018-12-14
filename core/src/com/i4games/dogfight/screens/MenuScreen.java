@@ -26,6 +26,12 @@ public class MenuScreen extends BaseScreen {
     private EventListener onExitButtonClicked;
 
     @Override
+    public void show(){
+        super.show();
+        Gdx.input.setInputProcessor(stage);
+    }
+
+    @Override
     public void initializeVariables(){
         super.initializeVariables();
         this.backgroundImage = Textures.backgroundImageTexture;
