@@ -76,6 +76,7 @@ public class PauseScreen extends BaseScreen {
             @Override
             public void touchUp (InputEvent event, float x, float y, int pointer, int button) {
                 Gdx.app.log("Click","On Exit Clicked!");
+                GameScreen.resetGame();
                 ScreenManager.getInstance().fadeInToScreen(Enumerations.Screen.MENU_SCREEN,0.5f);
                 SoundManager.getInstance().stopBackgroundMusic();
             }

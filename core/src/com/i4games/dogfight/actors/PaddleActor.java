@@ -32,8 +32,8 @@ public class PaddleActor extends BaseActor {
         float width = this.getScaledWidth();
         float height = this.getScaledHeight();
 
-        if(x - width < 5){
-            x = 5;
+        if(x < 0){
+            x = 0;
         }
 
         if (width + x > worldBounds.width){

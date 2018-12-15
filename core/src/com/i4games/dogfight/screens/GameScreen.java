@@ -51,15 +51,15 @@ public class GameScreen extends BaseScreen {
     float initialBallY;
     float ballAccelaration = 30000;
 
-    int lifesLeft = 3;
-    Texture lifeTextures[] = {Textures.fullHeartImageTexture,
+    private static int lifesLeft = 3;
+    private static Texture lifeTextures[] = {Textures.fullHeartImageTexture,
                                 Textures.fullHeartImageTexture,
                                 Textures.fullHeartImageTexture};
 
     private int NUMBER_OF_BRICKS_IN_ROW = 10;
     private int NUMBER_OF_ROWS = 10;
 
-    int numOfBricksKilled = 0;
+    private static int numOfBricksKilled = 0;
 
     public static Brick bricks[][];
 
@@ -256,7 +256,7 @@ public class GameScreen extends BaseScreen {
 
     }
 
-    private void resetGame(){
+    public static void resetGame(){
 
         bricks = null;
         numOfBricksKilled = 0;
